@@ -71,18 +71,6 @@ export default function Components(props) {
         <SectionTypography />
         <SectionJavascript />
         <SectionCarousel />
-        <SectionCompletedExamples />
-        <SectionLogin />
-        <GridItem md={12} className={classes.textCenter}>
-          <Link href="/login">
-            <a className={classes.link}>
-              <Button color="primary" size="lg" simple>
-                View Login Page
-              </Button>
-            </a>
-          </Link>
-        </GridItem>
-        <SectionExamples />
       </div>
       <Footer />
     </div>
