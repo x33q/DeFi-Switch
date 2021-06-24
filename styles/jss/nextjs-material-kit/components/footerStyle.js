@@ -20,6 +20,7 @@ const footerStyle = {
     padding: "15px 0",
     margin: "0",
     float: "right!important",
+    fontSize: "0.9em!important",
   },
   footer: {
     padding: "0.9375rem 0",
