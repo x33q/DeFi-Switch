@@ -56,16 +56,17 @@ export default function HeaderLinks(props) {
           color="transparent"
           className={classes.navLink}
         >
-          <CloudDownload className={classes.icons} /> Login
+          <CloudDownload className={classes.icons} />&nbsp;&nbsp;Login
         </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
           href="/register"
-          color="transparent"
-          className={classes.navLink}
+          className={classes.registerNavLink}
+          color="primary"
+          round
         >
-          <Icon className={classes.icons}>unarchive</Icon> Register
+          Register
         </Button>
       </ListItem>
       <ListItem className={classes.listItem}>

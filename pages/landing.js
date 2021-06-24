@@ -39,7 +39,7 @@ export default function LandingPage(props) {
         fixed
         changeColorOnScroll={{
           height: 100,
-          color: "dark",
+          color: "white",
         }}
         {...rest}
       />

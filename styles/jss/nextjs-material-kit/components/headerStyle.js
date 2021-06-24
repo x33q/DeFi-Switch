@@ -55,11 +55,12 @@ const headerStyle = {
   title: {
     ...defaultFont,
     lineHeight: "30px",
-    fontSize: "18px",
+    fontSize: "20px",
+    fontWeight: "800",
     borderRadius: "3px",
     textTransform: "none",
     color: "inherit",
-    padding: "8px 16px",
+    padding: "8px 0",
     letterSpacing: "unset",
     "&:hover,&:focus": {
       color: "inherit",
@@ -136,7 +137,7 @@ const headerStyle = {
     color: "#555",
     backgroundColor: "#fff !important",
     boxShadow:
-      "0 4px 18px 0px rgba(0, 0, 0, 0.12), 0 7px 10px -5px rgba(0, 0, 0, 0.15)",
+      "0 4px 18px 0px rgba(0, 0, 0, 0.03), 0 7px 10px -5px rgba(0, 0, 0, 0.03)",
   },
   drawerPaper: {
     border: "none",
