@@ -32,101 +32,91 @@ export default function SectionTypography() {
           <GridContainer>
             <div className={classes.typo}>
               <div className={classes.note}>Header 1</div>
-              <h1>The Life of Material Kit</h1>
+              <h1>DeFi Switch</h1>
             </div>
             <div className={classes.typo}>
               <div className={classes.note}>Header 2</div>
-              <h2>The Life of Material Kit</h2>
+              <h2>DeFi Switch</h2>
             </div>
             <div className={classes.typo}>
               <div className={classes.note}>Header 3</div>
-              <h3>The Life of Material Kit</h3>
+              <h3>DeFi Switch</h3>
             </div>
             <div className={classes.typo}>
               <div className={classes.note}>Header 4</div>
-              <h4>The Life of Material Kit</h4>
+              <h4>DeFi Switch</h4>
             </div>
             <div className={classes.typo}>
               <div className={classes.note}>Header 5</div>
-              <h5>The Life of Material Kit</h5>
+              <h5>DeFi Switch</h5>
             </div>
             <div className={classes.typo}>
               <div className={classes.note}>Header 6</div>
-              <h6>The Life of Material Kit</h6>
+              <h6>DeFi Switch</h6>
             </div>
             <div className={classes.typo}>
               <div className={classes.note}>Header 1</div>
-              <h1 className={classes.title}>The Life of Material Kit</h1>
+              <h1 className={classes.title}>DeFi Switch</h1>
             </div>
             <div className={classes.typo}>
               <div className={classes.note}>Header 2</div>
-              <h2 className={classes.title}>The Life of Material Kit</h2>
+              <h2 className={classes.title}>DeFi Switch</h2>
             </div>
             <div className={classes.typo}>
               <div className={classes.note}>Header 3</div>
-              <h3 className={classes.title}>The Life of Material Kit</h3>
+              <h3 className={classes.title}>DeFi Switch</h3>
             </div>
             <div className={classes.typo}>
               <div className={classes.note}>Header 4</div>
-              <h4 className={classes.title}>The Life of Material Kit</h4>
+              <h4 className={classes.title}>DeFi Switch</h4>
             </div>
             <div className={classes.typo}>
               <div className={classes.note}>Paragraph</div>
               <p>
-                I will be the leader of a company that ends up being worth
-                billions of dollars, because I got the answers. I understand
-                culture. I am the nucleus. I think that’s a responsibility that
-                I have, to push possibilities, to show people, this is the level
-                that things could be at.
+              Put your ZAR to work in the world of DeFi easily, no complicated wallets or risky transactions &amp; up to 10% APR with zero deposit fees. It’s as simple as a normal deposit with money you understand. We take care of all the token swapping, network bridging &amp; DeFi investing so that you can focus on the returns.
               </p>
             </div>
             <div className={classes.typo}>
               <div className={classes.note}>Quote</div>
               <Quote
-                text="I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus. I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at."
-                author=" Kanye West, Musician"
+                text="Put your ZAR to work in the world of DeFi easily, no complicated wallets or risky transactions &amp; up to 10% APR with zero deposit fees. It’s as simple as a normal deposit with money you understand. We take care of all the token swapping, network bridging &amp; DeFi investing so that you can focus on the returns."
+                author="DeFi Switch"
               />
             </div>
             <div className={classes.typo}>
               <div className={classes.note}>Muted Text</div>
               <Muted>
-                I will be the leader of a company that ends up being worth
-                billions of dollars, because I got the answers...
+                Put your ZAR to work in the world of DeFi easily, no complicated wallets or risky transactions
               </Muted>
             </div>
             <div className={classes.typo}>
               <div className={classes.note}>Primary Text</div>
               <Primary>
-                I will be the leader of a company that ends up being worth
-                billions of dollars, because I got the answers...
+                Put your ZAR to work in the world of DeFi easily, no complicated wallets or risky transactions
               </Primary>
             </div>
             <div className={classes.typo}>
               <div className={classes.note}>Info Text</div>
               <Info>
-                I will be the leader of a company that ends up being worth
-                billions of dollars, because I got the answers...
+                Put your ZAR to work in the world of DeFi easily, no complicated wallets or risky transactions
               </Info>
             </div>
             <div className={classes.typo}>
               <div className={classes.note}>Success Text</div>
               <Success>
-                I will be the leader of a company that ends up being worth
-                billions of dollars, because I got the answers...
+                Put your ZAR to work in the world of DeFi easily, no complicated wallets or risky transactions
               </Success>
             </div>
             <div className={classes.typo}>
               <div className={classes.note}>Warning Text</div>
               <Warning>
-                I will be the leader of a company that ends up being worth
-                billions of dollars, because I got the answers...
+                Put your ZAR to work in the world of DeFi easily, no complicated wallets or risky transactions
               </Warning>
             </div>
             <div className={classes.typo}>
               <div className={classes.note}>Danger Text</div>
               <Danger>
-                I will be the leader of a company that ends up being worth
-                billions of dollars, because I got the answers...
+                Put your ZAR to work in the world of DeFi easily, no complicated wallets or risky transactions
               </Danger>
             </div>
             <div className={classes.typo}>

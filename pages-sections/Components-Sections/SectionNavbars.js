@@ -87,7 +87,7 @@ export default function SectionNavbars() {
             </div>
             <Header
               brand="Icons"
-              color="info"
+              color="dark"
               rightLinks={
                 <List className={classes.list}>
                   <ListItem className={classes.listItem}>
@@ -134,11 +134,11 @@ export default function SectionNavbars() {
       <div id="navbar" className={classes.navbar}>
         <div
           className={classes.navigation}
-          style={{ backgroundImage: "url('/img/bg.jpg')" }}
+          style={{ backgroundImage: "url('/img/bg7.jpg')" }}
         >
           <Header
-            brand="Brand"
-            color="rose"
+            brand="DeFi Switch"
+            color="primary"
             leftLinks={
               <List className={classes.list}>
                 <ListItem className={classes.listItem}>
@@ -186,8 +186,8 @@ export default function SectionNavbars() {
             }
           />
           <Header
-            brand="Info Color"
-            color="info"
+            brand="DeFi Switch"
+            color="white"
             rightLinks={
               <List className={classes.list}>
                 <ListItem className={classes.listItem}>
@@ -224,7 +224,7 @@ export default function SectionNavbars() {
             }
           />
           <Header
-            brand="Primary Color"
+            brand="DeFi Switch"
             color="primary"
             rightLinks={
               <List className={classes.list}>
@@ -262,7 +262,7 @@ export default function SectionNavbars() {
             }
           />
           <Header
-            brand="Navbar with notifications"
+            brand="DeFi Switch"
             color="dark"
             rightLinks={
               <List className={classes.list}>
@@ -293,7 +293,7 @@ export default function SectionNavbars() {
                     href="#pablo"
                     className={classes.notificationNavLink}
                     onClick={(e) => e.preventDefault()}
-                    color="rose"
+                    color="primary"
                   >
                     <Email className={classes.icons} />
                   </Button>
@@ -327,7 +327,7 @@ export default function SectionNavbars() {
             }
           />
           <Header
-            brand="Navbar with profile"
+            brand="DeFi Switch"
             rightLinks={
               <List className={classes.list}>
                 <ListItem className={classes.listItem}>
@@ -355,7 +355,7 @@ export default function SectionNavbars() {
                     href="#pablo"
                     className={classes.registerNavLink}
                     onClick={(e) => e.preventDefault()}
-                    color="rose"
+                    color="primary"
                     round
                   >
                     Register

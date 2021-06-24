@@ -30,7 +30,7 @@ export default function HeaderLinks(props) {
         <CustomDropdown
           noLiPadding
           navDropdown
-          buttonText="Products"
+          buttonText="Information"
           buttonProps={{
             className: classes.navLink,
             color: "transparent",

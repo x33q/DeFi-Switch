@@ -38,8 +38,8 @@ export default function LandingPage(props) {
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
-          height: 400,
-          color: "white",
+          height: 100,
+          color: "dark",
         }}
         {...rest}
       />
@@ -50,6 +50,10 @@ export default function LandingPage(props) {
               <h1 className={classes.title}>Simple Rand Investing into Complex Decentralised Finance.</h1>
               <h4>
                 Put your ZAR to work in the world of DeFi easily, no complicated wallets or risky transactions &amp; up to 10% APR with zero deposit fees.
+                <br /><br />
+                It’s as simple as a normal deposit with money you understand.
+                <br /><br />
+                We take care of all the token swapping, network bridging &amp; DeFi investing so that you can focus on the returns.
               </h4>
               <br />
               <Button

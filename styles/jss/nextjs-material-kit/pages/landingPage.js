@@ -30,7 +30,7 @@ const landingPageStyle = {
     // maxWidth: "1600px",
     borderRadius: "6px",
     boxShadow:
-      "0 16px 24px 2px rgba(0, 0, 0, 0.1), 0 6px 30px 5px rgba(0, 0, 0, 0.1), 0 8px 10px -5px rgba(0, 0, 0, 0.1)",
+      "0 16px 24px 2px rgba(0, 0, 0, 0.03), 0 6px 30px 5px rgba(0, 0, 0, 0.03), 0 8px 10px -5px rgba(0, 0, 0, 0.03)",
   },
 };
 
