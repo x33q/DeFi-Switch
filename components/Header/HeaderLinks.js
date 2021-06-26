@@ -65,52 +65,24 @@ export default function HeaderLinks(props) {
       <ListItem className={classes.listItem}>
         <Button
           href="/register"
+          className={classes.navLink}
+          color="transparent"
+        >
+          <CloudDownload className={classes.icons} /> Register
+        </Button>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Button
+          buttonIcon={Apps}
+          href="/dashboard"
           className={classes.registerNavLink}
           color="primary"
           round
         >
-          Register
+          <Apps className={classes.icons} /> Dashboard
         </Button>
       </ListItem>
-      <ListItem className={classes.listItem}>
-        {/*<Tooltip title="Delete">
-          <IconButton aria-label="Delete">
-            <DeleteIcon />
-          </IconButton>
-        </Tooltip>*/}
-        <Tooltip
-          id="instagram-twitter"
-          title="Follow us on twitter"
-          placement={"top"}
-          classes={{ tooltip: classes.tooltip }}
-        >
-          <Button
-            href="https://twitter.com"
-            target="_blank"
-            color="transparent"
-            className={classes.navLink}
-          >
-            <i className={classes.socialIcons + " fab fa-twitter"} />
-          </Button>
-        </Tooltip>
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <Tooltip
-          id="instagram-facebook"
-          title="Find us on Github"
-          placement={"top"}
-          classes={{ tooltip: classes.tooltip }}
-        >
-          <Button
-            color="transparent"
-            href="https://github.com/"
-            target="_blank"
-            className={classes.navLink}
-          >
-            <i className={classes.socialIcons + " fab fa-github"} />
-          </Button>
-        </Tooltip>
-      </ListItem>
+
     </List>
   );
 }
