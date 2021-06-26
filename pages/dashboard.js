@@ -30,6 +30,7 @@ import TinyLineChart3 from "components/Dashboard/TinyLineChart3.js";
 import TinyLineChart4 from "components/Dashboard/TinyLineChart4.js";
 
 import RecentActivity from "components/Dashboard/RecentActivity.js";
+import ProfileCard from "components/Dashboard/ProfileCard.js";
 
 const drawerWidth = 240;
 
@@ -55,6 +56,10 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     backgroundColor: '#ffffff',
     padding: '20px',
+  },
+  papercard: {
+    backgroundColor: '#FF0000',
+    minHeight: '300px',
   },
   specsgrid: {
     marginBottom: '30px',
@@ -98,6 +103,11 @@ const useStyles = makeStyles((theme) => ({
   subtitle: {
     backgroundColor: '#FFGG00',
     color: 'rgba(0,0,0,0.4)',
+  },
+  bignumber: {
+    color: '#000',
+    fontSize: '26px',
+    fontWeight: '700',
   },
 }));
 
@@ -164,11 +174,11 @@ export default function ClippedDrawer() {
                   </Grid>
                   <Grid container spacing={2}>
                     <Grid item sm={9}>
-                    <Typography variant="h4" noWrap>
-                      R3468,90
+                    <Typography variant="h4" noWrap className={classes.bignumber}>
+                      R23468,90
                     </Typography>
                     <Typography variant="subtitle2" noWrap>
-                      26%
+                      +66%
                     </Typography>
                     </Grid>
                     <Grid item sm={3}>
@@ -182,17 +192,17 @@ export default function ClippedDrawer() {
               <Paper className={classes.paper}>
                 <Grid container spacing={0}>
                   <Grid item sm={12}>
-                    <Typography variant="subtitle2" noWrap>
+                    <Typography variant="subtitle2" noWrap className={classes.subtitle}>
                       Performance
                     </Typography>
                   </Grid>
                   <Grid container spacing={2}>
                     <Grid item sm={9}>
-                    <Typography variant="h4" noWrap>
+                    <Typography variant="h4" noWrap className={classes.bignumber}>
                       R3468,90
                     </Typography>
                     <Typography variant="subtitle2" noWrap>
-                      26%
+                      +26%
                     </Typography>
                     </Grid>
                     <Grid item sm={3}>
@@ -206,17 +216,17 @@ export default function ClippedDrawer() {
               <Paper className={classes.paper}>
                 <Grid container spacing={0}>
                   <Grid item sm={12}>
-                    <Typography variant="subtitle2" noWrap>
+                    <Typography variant="subtitle2" noWrap className={classes.subtitle}>
                       Performance
                     </Typography>
                   </Grid>
                   <Grid container spacing={2}>
                     <Grid item sm={9}>
-                    <Typography variant="h4" noWrap>
-                      R3468,90
+                    <Typography variant="h4" noWrap className={classes.bignumber}>
+                      R2568,90
                     </Typography>
                     <Typography variant="subtitle2" noWrap>
-                      26%
+                      +26%
                     </Typography>
                     </Grid>
                     <Grid item sm={3}>
@@ -230,17 +240,17 @@ export default function ClippedDrawer() {
               <Paper className={classes.paper}>
                 <Grid container spacing={0}>
                   <Grid item sm={12}>
-                    <Typography variant="subtitle2" noWrap>
+                    <Typography variant="subtitle2" noWrap className={classes.subtitle}>
                       Performance
                     </Typography>
                   </Grid>
                   <Grid container spacing={2}>
                     <Grid item sm={9}>
-                    <Typography variant="h4" noWrap>
-                      R3468,90
+                    <Typography variant="h4" noWrap className={classes.bignumber}>
+                      R8468,25
                     </Typography>
                     <Typography variant="subtitle2" noWrap>
-                      26%
+                      +18%
                     </Typography>
                     </Grid>
                     <Grid item sm={3}>
@@ -264,6 +274,8 @@ export default function ClippedDrawer() {
         </Grid>
 
         <Grid item sm={3}>
+
+        <ProfileCard /><br /><br />
 
         <Typography variant="subtitle2" noWrap>Your Dashboard<br /><br /></Typography>
         <Typography paragraph>

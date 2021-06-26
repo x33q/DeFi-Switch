@@ -3,46 +3,46 @@ import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Resp
 
 const data = [
   {
-    name: 'Page A',
+    name: 'December',
     uv: 4000,
-    pv: 2400,
-    amt: 2400,
+    Market: 2400,
+    Profit: 2400,
   },
   {
-    name: 'Page B',
+    name: 'January',
     uv: 3000,
-    pv: 1398,
-    amt: 2210,
+    Market: 1398,
+    Profit: 2210,
   },
   {
-    name: 'Page C',
+    name: 'February',
     uv: 2000,
-    pv: 9800,
-    amt: 2290,
+    Market: 9800,
+    Profit: 2290,
   },
   {
-    name: 'Page D',
+    name: 'March',
     uv: 2780,
-    pv: 3908,
-    amt: 2000,
+    Market: 3908,
+    Profit: 2000,
   },
   {
-    name: 'Page E',
+    name: 'April',
     uv: 1890,
-    pv: 4800,
-    amt: 2181,
+    Market: 4800,
+    Profit: 2181,
   },
   {
-    name: 'Page F',
+    name: 'May',
     uv: 2390,
-    pv: 3800,
-    amt: 2500,
+    Market: 3800,
+    Profit: 2500,
   },
   {
-    name: 'Page G',
+    name: 'June',
     uv: 3490,
-    pv: 4300,
-    amt: 2100,
+    Market: 4300,
+    Profit: 2100,
   },
 ];
 
@@ -68,9 +68,9 @@ export default class Example extends PureComponent {
           <YAxis />
           <Tooltip />
           <Legend />
-          <Bar dataKey="pv" stackId="a" fill="#8884d8" />
-          <Bar dataKey="amt" stackId="a" fill="#82ca9d" />
-          <Bar dataKey="uv" fill="#1e03f2" />
+          <Bar dataKey="Market" stackId="a" fill="#0373f2" />
+          <Bar dataKey="Profit" stackId="a" fill="#82ca9d" />
+          <Bar dataKey="uv" fill="#8a03f2" />
         </BarChart>
       </ResponsiveContainer>
     );
