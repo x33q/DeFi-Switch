@@ -13,8 +13,10 @@ import ListItemText from '@material-ui/core/ListItemText';
 // Icons
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
-import People from "@material-ui/icons/People";
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import FingerprintIcon from '@material-ui/icons/Fingerprint';
+import SettingsApplicationsIcon from '@material-ui/icons/SettingsApplications';
+import DashboardIcon from '@material-ui/icons/Dashboard';
 
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
@@ -103,6 +105,7 @@ const useStyles = makeStyles((theme) => ({
   subtitle: {
     backgroundColor: '#FFGG00',
     color: 'rgba(0,0,0,0.4)',
+    fontSize: '12px',
   },
   bignumber: {
     color: '#000',
@@ -139,7 +142,7 @@ export default function ClippedDrawer() {
           <List>
             {['Dashboard', 'Profile'].map((text, index) => (
               <ListItem button key={text}>
-                <ListItemIcon>{index % 2 === 0 ? <People /> : <MailIcon />}</ListItemIcon>
+                <ListItemIcon>{index % 2 === 0 ? <DashboardIcon /> : <AccountCircleIcon />}</ListItemIcon>
                 <ListItemText primary={text} />
               </ListItem>
             ))}
@@ -169,7 +172,7 @@ export default function ClippedDrawer() {
                 <Grid container spacing={0}>
                   <Grid item sm={12}>
                     <Typography variant="subtitle2" noWrap className={classes.subtitle}>
-                      Performance
+                      Total Investments
                     </Typography>
                   </Grid>
                   <Grid container spacing={2}>
@@ -193,7 +196,7 @@ export default function ClippedDrawer() {
                 <Grid container spacing={0}>
                   <Grid item sm={12}>
                     <Typography variant="subtitle2" noWrap className={classes.subtitle}>
-                      Performance
+                      Portfolio Performance
                     </Typography>
                   </Grid>
                   <Grid container spacing={2}>
@@ -217,7 +220,7 @@ export default function ClippedDrawer() {
                 <Grid container spacing={0}>
                   <Grid item sm={12}>
                     <Typography variant="subtitle2" noWrap className={classes.subtitle}>
-                      Performance
+                      Weekly Profits
                     </Typography>
                   </Grid>
                   <Grid container spacing={2}>
@@ -241,7 +244,7 @@ export default function ClippedDrawer() {
                 <Grid container spacing={0}>
                   <Grid item sm={12}>
                     <Typography variant="subtitle2" noWrap className={classes.subtitle}>
-                      Performance
+                      Total Profits
                     </Typography>
                   </Grid>
                   <Grid container spacing={2}>

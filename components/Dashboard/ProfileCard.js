@@ -14,6 +14,7 @@ const useStyles = makeStyles({
   root: {
     textAlign: 'center',
     margin: 'auto',
+    padding: '10px 30px',
   },
   media: {
     height: 140,
@@ -23,7 +24,6 @@ const useStyles = makeStyles({
     height: '80px',
     width: '80px',
     margin: 'auto',
-    marginTop: '10px',
     marginBottom: '10px',
   },
 });
