@@ -12,9 +12,19 @@ import Avatar from '@material-ui/core/Avatar';
 
 const useStyles = makeStyles({
   root: {
+    textAlign: 'center',
+    margin: 'auto',
   },
   media: {
     height: 140,
+  },
+  avatarBlue: {
+    backgroundColor: '#1e03f2',
+    height: '80px',
+    width: '80px',
+    margin: 'auto',
+    marginTop: '10px',
+    marginBottom: '10px',
   },
 });
 
@@ -23,28 +33,16 @@ export default function MediaCard() {
 
   return (
     <Card className={classes.root}>
-      <CardActionArea>
         <CardContent>
-        <div className={classes.root}>
-      <Avatar>H</Avatar>
-    </div>
+            <Avatar className={classes.avatarBlue}>MV</Avatar>
           <Typography gutterBottom variant="h5" component="h2">
             Username
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-            across all continents except Antarctica
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore.
           </Typography>
         </CardContent>
-      </CardActionArea>
-      <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          Learn More
-        </Button>
-      </CardActions>
     </Card>
   );
 }

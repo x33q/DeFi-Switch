@@ -32,7 +32,7 @@ import TinyLineChart4 from "components/Dashboard/TinyLineChart4.js";
 import RecentActivity from "components/Dashboard/RecentActivity.js";
 import ProfileCard from "components/Dashboard/ProfileCard.js";
 
-const drawerWidth = 240;
+const drawerWidth = 200;
 
 import theme from "styles/jss/nextjs-material-kit/pages/dashboard.js";
 
@@ -279,8 +279,7 @@ export default function ClippedDrawer() {
 
         <Typography variant="subtitle2" noWrap>Your Dashboard<br /><br /></Typography>
         <Typography paragraph>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua. Rhoncus dolor purus non enim praesent.<br /><br />
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.<br /><br />
         </Typography>
 
         <Typography variant="subtitle2" noWrap>Recent Activity<br /><br /></Typography>
