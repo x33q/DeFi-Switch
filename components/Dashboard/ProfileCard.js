@@ -73,7 +73,7 @@ export default function MediaCard() {
 
           <Grid container spacing={1}>
             <Grid item xs={6}>
-              <Typography variant="subtitle2" color="textPrimary" className={classes.progressTitle}>
+              <Typography variant="subtitle2" color="textPrimary" component="p" className={classes.progressTitle}>
               Profile Progress<br />
               </Typography>
             </Grid>

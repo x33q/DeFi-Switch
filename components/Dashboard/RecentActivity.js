@@ -30,7 +30,7 @@ export default function AlignItemsList() {
           <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
         </ListItemAvatar>
         <ListItemText
-          primary="Brunch this weekend?"
+          primary="Unitato Skyrockets"
           secondary={
             <React.Fragment>
               <Typography
@@ -52,7 +52,7 @@ export default function AlignItemsList() {
           <Avatar alt="Travis Howard" src="/static/images/avatar/2.jpg" />
         </ListItemAvatar>
         <ListItemText
-          primary="Summer BBQ"
+          primary="Pet Rock Finance"
           secondary={
             <React.Fragment>
               <Typography
