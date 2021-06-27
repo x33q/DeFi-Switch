@@ -33,6 +33,7 @@ import TinyLineChart4 from "components/Dashboard/TinyLineChart4.js";
 
 import RecentActivity from "components/Dashboard/RecentActivity.js";
 import ProfileCard from "components/Dashboard/ProfileCard.js";
+import UserMenu from "components/Dashboard/UserMenu.js";
 
 import Avatar from '@material-ui/core/Avatar';
 
@@ -47,7 +48,7 @@ const useStyles = makeStyles((theme) => ({
   },
   appBar: {
     zIndex: theme.zIndex.drawer + 1,
-    backgroundColor: '#1d03f2',
+    backgroundColor: '#12162d',
   },
   homelink: {
     backgroundColor: '#1601bd',
@@ -152,16 +153,15 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: '700',
   },
   avatarUser: {
-    backgroundColor: 'rgba(255,255,255,1)',
+    backgroundColor: 'rgba(255,255,255,0)',
     color: '#000',
-    border: '1px solid rgba(255,255,255,1)',
     height: '36px',
     width: '36px',
     fontSize: '12px',
     fontWeight: '700',
     position: 'absolute',
-    top: '13px',
-    right: '20px',
+    top: '12px',
+    right: '25px',
   },
   navList: {
     fontSize: '12px',
@@ -185,7 +185,8 @@ export default function ClippedDrawer() {
           <div className={classes.ZALogo}>
             <img alt="ZA" src="http://purecatamphetamine.github.io/country-flag-icons/3x2/ZA.svg"/>
           </div>
-          <Avatar className={classes.avatarUser}>MV</Avatar>
+
+          <div className={classes.avatarUser}><UserMenu /></div>
         </Toolbar>
       </AppBar>
       <Drawer
@@ -200,7 +201,7 @@ export default function ClippedDrawer() {
           <List>
             {['Dashboard', 'Profile'].map((text, index) => (
               <ListItem button key={text}>
-                <ListItemIcon>{index % 2 === 0 ? <DashboardIcon /> : <AccountCircleIcon />}</ListItemIcon>
+                <ListItemIcon>{index % 2 === 0 ? <DashboardIcon color="primary" /> : <AccountCircleIcon color="info" />}</ListItemIcon>
                 <ListItemText primary={text} className={classes.navList} />
               </ListItem>
             ))}
@@ -209,7 +210,7 @@ export default function ClippedDrawer() {
           <List>
             {['Settings'].map((text, index) => (
               <ListItem button key={text}>
-                <ListItemIcon>{index % 2 === 0 ? <FingerprintIcon /> : <MailIcon />}</ListItemIcon>
+                <ListItemIcon>{index % 2 === 0 ? <FingerprintIcon color="error" /> : <MailIcon />}</ListItemIcon>
                 <ListItemText primary={text} />
               </ListItem>
             ))}
