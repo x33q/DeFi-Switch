@@ -34,9 +34,13 @@
   "homepage": "https://demos.creative-tim.com/nextjs-material-kit",
   "dependencies": {
     "@material-ui/core": "4.11.4",
+    "@material-ui/data-grid": "^4.0.0-alpha.32",
     "@material-ui/icons": "4.11.2",
+    "@material-ui/x-grid": "^4.0.0-alpha.32",
+    "@material-ui/x-grid-data-generator": "^4.0.0-alpha.32",
     "classnames": "2.3.1",
     "moment": "2.29.1",
+    "mui-data-grid": "^0.2.2",
     "next": "10.2.0",
     "next-compose-plugins": "2.2.1",
     "next-images": "1.7.0",
@@ -51,6 +55,7 @@
     "react-slick": "0.28.1",
     "recharts": "^2.0.9",
     "styled-components": "5.3.0",
-    "webpack": "4.46.0"
+    "webpack": "4.46.0",
+    "x-grid": "^0.1.0"
   }
 }

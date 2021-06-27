@@ -175,6 +175,7 @@ const useStyles = makeStyles((theme) => ({
     top: '12px',
     right: '25px',
     transform: 'scale(0.8)',
+    cursor: 'pointer',
   },
   listItemText: {
     fontSize: '14px',
@@ -182,6 +183,10 @@ const useStyles = makeStyles((theme) => ({
   },
   menuIcon: {
     marginRight: '0px',
+  },
+  bodyTitles: {
+    fontWeight: '700',
+    fontSize: '18px',
   },
 }));
 
@@ -361,11 +366,6 @@ export default function ClippedDrawer() {
         <Grid item sm={12} md={4} lg={3}>
 
         <ProfileCard /><br /><br />
-
-        <Typography variant="subtitle2" noWrap>Your Dashboard<br /><br /></Typography>
-        <Typography paragraph>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.<br /><br />
-        </Typography>
 
         <Typography variant="subtitle2" noWrap>Market Activity<br /><br /></Typography>
         <RecentActivity />
