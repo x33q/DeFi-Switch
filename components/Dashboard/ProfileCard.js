@@ -79,7 +79,7 @@ export default function MediaCard() {
             </Grid>
             <Grid item xs={6} className={classes.floatRight}>
               <Typography variant="body2" color="textSecondary" component="p" className={classes.completeTxt}>
-              2/6 Steps
+              3/6 Steps
               </Typography>
             </Grid>
           </Grid>

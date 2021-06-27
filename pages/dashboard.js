@@ -38,7 +38,7 @@ import UserMenu from "components/Dashboard/UserMenu.js";
 
 import Avatar from '@material-ui/core/Avatar';
 
-const drawerWidth = 200;
+const drawerWidth = 155;
 
 import theme from "styles/jss/nextjs-material-kit/pages/dashboard.js";
 
@@ -144,13 +144,14 @@ const useStyles = makeStyles((theme) => ({
     top: '20px',
   },
   avatarLogo: {
+    backgroundImage: 'linear-gradient(to bottom, #232847 0%, #161a2f 100%)',
     backgroundColor: 'rgba(0,0,0,0)',
     color: '#FFF',
-    border: '1px solid rgba(255,255,255,0.3)',
-    height: '30px',
-    width: '30px',
+    height: '32px',
+    width: '32px',
     marginRight: '13px',
-    fontSize: '10px',
+    marginLeft: '-5px',
+    fontSize: '11px',
     fontWeight: '700',
   },
   avatarUser: {
@@ -164,8 +165,12 @@ const useStyles = makeStyles((theme) => ({
     top: '12px',
     right: '25px',
   },
-  navList: {
-    fontSize: '12px',
+  listItemText: {
+    fontSize: '14px',
+    marginLeft: '-16px',
+  },
+  menuIcon: {
+    marginRight: '0px',
   },
 }));
 
@@ -204,10 +209,10 @@ export default function ClippedDrawer() {
         <Toolbar />
         <div className={classes.drawerContainer}>
           <List>
-            {['Dashboard', 'Profile'].map((text, index) => (
+            {['Dashboard'].map((text, index) => (
               <ListItem button key={text}>
-                <ListItemIcon>{index % 2 === 0 ? <DashboardIcon color="primary" /> : <AccountCircleIcon color="info" />}</ListItemIcon>
-                <ListItemText primary={text} className={classes.navList} />
+                <ListItemIcon>{index % 2 === 0 ? <DashboardIcon className={classes.menuIcon} color="info" /> : <AccountCircleIcon className={classes.menuIcon} color="info" />}</ListItemIcon>
+                <ListItemText classes={{primary:classes.listItemText}} primary={text} />
               </ListItem>
             ))}
           </List>
@@ -215,8 +220,8 @@ export default function ClippedDrawer() {
           <List>
             {['Settings'].map((text, index) => (
               <ListItem button key={text}>
-                <ListItemIcon>{index % 2 === 0 ? <FingerprintIcon color="error" /> : <MailIcon />}</ListItemIcon>
-                <ListItemText primary={text} />
+                <ListItemIcon>{index % 2 === 0 ? <FingerprintIcon className={classes.menuIcon} color="error" /> : <MailIcon />}</ListItemIcon>
+                <ListItemText classes={{primary:classes.listItemText}} primary={text} />
               </ListItem>
             ))}
           </List>
@@ -225,7 +230,7 @@ export default function ClippedDrawer() {
       <main className={classes.content}>
         <Toolbar />
 
-        <Grid container spacing={4}>
+        <Grid container spacing={5}>
 
           <Grid item sm={12} md={8} lg={9}>
 
@@ -333,8 +338,10 @@ export default function ClippedDrawer() {
 
         <Typography variant="h5" noWrap className={classes.bodyTitles}>Portfolio Performance<br /><br /></Typography>
 
-        <div className={classes.chartThree}><MixBarChart /></div>
-
+        <Paper className={classes.paper}>
+          <div className={classes.chartThree}><MixBarChart /></div>
+        </Paper>
+        <br /><br />
         <Typography variant="h5" className={classes.bodyTitles} noWrap>Transaction History<br /><br /></Typography>
         <DashboardDataTable />
 

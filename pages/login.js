@@ -91,7 +91,7 @@ export default function LoginPage(props) {
                     />
                   </CardBody>
                   <CardFooter className={classes.cardFooter}>
-                    <Button simple color="primary" size="lg">
+                    <Button href="/dashboard" simple color="primary" size="lg">
                       Go to your Dashboard
                     </Button>
                   </CardFooter>

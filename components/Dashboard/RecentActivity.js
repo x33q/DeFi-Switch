@@ -13,7 +13,10 @@ const useStyles = makeStyles((theme) => ({
     width: '100%',
     maxWidth: '100%',
     marginBottom: '20px',
-    backgroundColor: theme.palette.background.paper,
+    backgroundColor: '#ffffff',
+    padding: '10px 20px 15px 10px',
+    borderRadius: '8px',
+    boxShadow: 'rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px',
   },
   inline: {
     display: 'inline',
@@ -39,9 +42,9 @@ export default function AlignItemsList() {
                 className={classes.inline}
                 color="textPrimary"
               >
-                Ali Connors
+                26/06/21
               </Typography>
-              {" — I'll be in your neighborhood doing errands this…"}
+              {" — Lorem ipsum dolor sit amet consectuer..."}
             </React.Fragment>
           }
         />
@@ -61,9 +64,9 @@ export default function AlignItemsList() {
                 className={classes.inline}
                 color="textPrimary"
               >
-                to Scott, Alex, Jennifer
+                26/06/21
               </Typography>
-              {" — Wish I could come, but I'm out of town this…"}
+              {" — Lorem ipsum dolor sit amet consectuer..."}
             </React.Fragment>
           }
         />
@@ -83,9 +86,9 @@ export default function AlignItemsList() {
                 className={classes.inline}
                 color="textPrimary"
               >
-                Sandra Adams
+                26/06/21
               </Typography>
-              {' — Do you have Paris recommendations? Have you ever…'}
+              {" — Lorem ipsum dolor sit amet consectuer..."}
             </React.Fragment>
           }
         />
