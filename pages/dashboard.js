@@ -4,6 +4,7 @@ import Drawer from '@material-ui/core/Drawer';
 import AppBar from '@material-ui/core/AppBar';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Toolbar from '@material-ui/core/Toolbar';
+import Tooltip from "@material-ui/core/Tooltip";
 import List from '@material-ui/core/List';
 import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
@@ -177,11 +178,13 @@ export default function ClippedDrawer() {
       <AppBar elevation={0} position="fixed" className={classes.appBar}>
         <Toolbar>
           <Avatar className={classes.avatarLogo}>DS</Avatar>
+          <Tooltip title="Back to Home" placement="right">
           <Typography variant="h5" noWrap className={classes.apptitle}>
           <Link href="/landing" component="a">
             <a className={classes.appLink}>DeFi Switch</a>
           </Link>
           </Typography>
+          </Tooltip>
           <div className={classes.ZALogo}>
             <img alt="ZA" src="http://purecatamphetamine.github.io/country-flag-icons/3x2/ZA.svg"/>
           </div>
