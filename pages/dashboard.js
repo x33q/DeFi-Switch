@@ -115,6 +115,7 @@ const useStyles = makeStyles((theme) => ({
     color: '#000',
     fontSize: '26px',
     fontWeight: '700',
+    margin: '4px 0',
   },
   ZALogo: {
     width: '24px',
@@ -192,7 +193,7 @@ export default function ClippedDrawer() {
                   <Grid container spacing={2}>
                     <Grid item sm={9}>
                     <Typography variant="h4" noWrap className={classes.bignumber}>
-                      R23468,90
+                      R23 468,90
                     </Typography>
                     <Typography variant="subtitle2" noWrap>
                       +66%
@@ -216,7 +217,7 @@ export default function ClippedDrawer() {
                   <Grid container spacing={2}>
                     <Grid item sm={9}>
                     <Typography variant="h4" noWrap className={classes.bignumber}>
-                      R3468,90
+                      R3 468,90
                     </Typography>
                     <Typography variant="subtitle2" noWrap>
                       +26%
@@ -240,7 +241,7 @@ export default function ClippedDrawer() {
                   <Grid container spacing={2}>
                     <Grid item sm={9}>
                     <Typography variant="h4" noWrap className={classes.bignumber}>
-                      R2568,90
+                      R2 568,90
                     </Typography>
                     <Typography variant="subtitle2" noWrap>
                       +26%
@@ -264,7 +265,7 @@ export default function ClippedDrawer() {
                   <Grid container spacing={2}>
                     <Grid item sm={9}>
                     <Typography variant="h4" noWrap className={classes.bignumber}>
-                      R8468,25
+                      R8 468,25
                     </Typography>
                     <Typography variant="subtitle2" noWrap>
                       +18%
