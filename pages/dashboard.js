@@ -186,7 +186,9 @@ export default function ClippedDrawer() {
           </Typography>
           </Tooltip>
           <div className={classes.ZALogo}>
+            <Tooltip title="South Africa Only" placement="left">
             <img alt="ZA" src="http://purecatamphetamine.github.io/country-flag-icons/3x2/ZA.svg"/>
+            </Tooltip>
           </div>
 
           <div className={classes.avatarUser}><UserMenu /></div>
