@@ -58,6 +58,8 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     backgroundColor: '#ffffff',
     padding: '20px',
+    borderRadius: '8px',
+    boxShadow: 'rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px',
   },
   papercard: {
     backgroundColor: '#FF0000',
@@ -176,13 +178,13 @@ export default function ClippedDrawer() {
       <main className={classes.content}>
         <Toolbar />
 
-        <Grid container spacing={6}>
+        <Grid container spacing={4}>
 
-          <Grid item sm={9}>
+          <Grid item sm={12} md={8} lg={9}>
 
         <div className={classes.specsgrid}>
           <Grid container spacing={3}>
-            <Grid item xs={6} sm={3}>
+            <Grid item xs={12} sm={12} md={6} lg={3}>
               <Paper className={classes.paper}>
                 <Grid container spacing={0}>
                   <Grid item sm={12}>
@@ -206,7 +208,7 @@ export default function ClippedDrawer() {
                 </Grid>
               </Paper>
             </Grid>
-            <Grid item xs={6} sm={3}>
+            <Grid item xs={12} sm={12} md={6} lg={3}>
               <Paper className={classes.paper}>
                 <Grid container spacing={0}>
                   <Grid item sm={12}>
@@ -230,7 +232,7 @@ export default function ClippedDrawer() {
                 </Grid>
               </Paper>
             </Grid>
-            <Grid item xs={6} sm={3}>
+            <Grid item xs={12} sm={12} md={6} lg={3}>
               <Paper className={classes.paper}>
                 <Grid container spacing={0}>
                   <Grid item sm={12}>
@@ -254,7 +256,7 @@ export default function ClippedDrawer() {
                 </Grid>
               </Paper>
             </Grid>
-            <Grid item xs={6} sm={3}>
+            <Grid item xs={12} sm={12} md={6} lg={3}>
               <Paper className={classes.paper}>
                 <Grid container spacing={0}>
                   <Grid item sm={12}>
@@ -291,7 +293,7 @@ export default function ClippedDrawer() {
 
         </Grid>
 
-        <Grid item sm={3}>
+        <Grid item sm={12} md={4} lg={3}>
 
         <ProfileCard /><br /><br />
 

@@ -69,7 +69,7 @@ export default class Example extends PureComponent {
           <Tooltip />
           <Legend />
           <Bar dataKey="Market" stackId="a" fill="#0373f2" />
-          <Bar dataKey="Profit" stackId="a" fill="#82ca9d" />
+          <Bar dataKey="Profit" stackId="a" fill="#3da859" />
           <Bar dataKey="uv" fill="#8a03f2" />
         </BarChart>
       </ResponsiveContainer>

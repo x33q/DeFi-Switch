@@ -53,7 +53,7 @@ export default class Example extends PureComponent {
     return (
       <ResponsiveContainer width="100%" height="100%">
         <LineChart width={300} height={100} data={data}>
-          <Line type="monotone" dataKey="pv" stroke="#7db351" strokeWidth={3} />
+          <Line type="monotone" dataKey="pv" stroke="#FFAA00" strokeWidth={3} />
         </LineChart>
       </ResponsiveContainer>
     );
