@@ -30,7 +30,7 @@ export default function AlignItemsList() {
     <List className={classes.root}>
       <ListItem alignItems="flex-start">
         <ListItemAvatar>
-          <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+          <Avatar alt="Remy Sharp" src="https://raw.githubusercontent.com/spothq/cryptocurrency-icons/master/32%402x/color/yfi%402x.png" />
         </ListItemAvatar>
         <ListItemText
           primary="Unitato Skyrockets"
@@ -52,7 +52,7 @@ export default function AlignItemsList() {
       <Divider variant="inset" component="li" />
       <ListItem alignItems="flex-start">
         <ListItemAvatar>
-          <Avatar alt="Travis Howard" src="/static/images/avatar/2.jpg" />
+          <Avatar alt="Travis Howard" src="https://raw.githubusercontent.com/spothq/cryptocurrency-icons/master/32%402x/color/usdt%402x.png" />
         </ListItemAvatar>
         <ListItemText
           primary="Pet Rock Finance"
@@ -74,10 +74,10 @@ export default function AlignItemsList() {
       <Divider variant="inset" component="li" />
       <ListItem alignItems="flex-start">
         <ListItemAvatar>
-          <Avatar alt="Cindy Baker" src="/static/images/avatar/3.jpg" />
+          <Avatar alt="Cindy Baker" src="https://raw.githubusercontent.com/spothq/cryptocurrency-icons/master/32%402x/color/uni%402x.png" />
         </ListItemAvatar>
         <ListItemText
-          primary="Oui Oui"
+          primary="Uniswap Pair Launch"
           secondary={
             <React.Fragment>
               <Typography
