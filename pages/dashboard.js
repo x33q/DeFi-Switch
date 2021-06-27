@@ -47,6 +47,11 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     padding: '20px',
   },
+  palette: {
+    primary: {
+      main: '#FFAA00',
+    },
+  },
   appBar: {
     zIndex: theme.zIndex.drawer + 1,
     backgroundColor: '#12162d',
@@ -64,7 +69,11 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: '#ffffff',
     padding: '20px',
     borderRadius: '8px',
+    transition: 'all 800ms ease-out',
     boxShadow: 'rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px',
+    "&:hover": {
+      transform: 'scale(1)',
+    },
   },
   papercard: {
     backgroundColor: '#FF0000',
@@ -137,11 +146,12 @@ const useStyles = makeStyles((theme) => ({
     margin: '4px 0',
   },
   ZALogo: {
-    width: '24px',
-    marginLeft: '13px',
+    width: '22px',
     position: 'absolute',
     right: '75px',
     top: '20px',
+    overflow: 'hidden',
+    borderRadius: '7px',
   },
   avatarLogo: {
     backgroundImage: 'linear-gradient(to bottom, #232847 0%, #161a2f 100%)',
@@ -164,6 +174,7 @@ const useStyles = makeStyles((theme) => ({
     position: 'absolute',
     top: '12px',
     right: '25px',
+    transform: 'scale(0.8)',
   },
   listItemText: {
     fontSize: '14px',
