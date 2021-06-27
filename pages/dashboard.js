@@ -102,6 +102,10 @@ const useStyles = makeStyles((theme) => ({
     height: '340px',
     marginBottom: '30px',
   },
+  apptitle: {
+    fontSize: '17px',
+    fontWeight: '700',
+  },
   subtitle: {
     backgroundColor: '#FFGG00',
     color: 'rgba(0,0,0,0.4)',
@@ -112,6 +116,13 @@ const useStyles = makeStyles((theme) => ({
     fontSize: '26px',
     fontWeight: '700',
   },
+  ZALogo: {
+    width: '24px',
+    marginLeft: '13px',
+    position: 'absolute',
+    right: '110px',
+    top: '20px',
+  },
 }));
 
 export default function ClippedDrawer() {
@@ -120,11 +131,14 @@ export default function ClippedDrawer() {
   return (
     <div className={classes.root}>
       <CssBaseline />
-      <AppBar position="fixed" className={classes.appBar}>
+      <AppBar elevation={0} position="fixed" className={classes.appBar}>
         <Toolbar>
-          <Typography variant="h5" noWrap>
+          <Typography variant="h5" noWrap className={classes.apptitle}>
             DeFi Switch
           </Typography>
+          <div className={classes.ZALogo}>
+            <img alt="ZA" src="http://purecatamphetamine.github.io/country-flag-icons/3x2/ZA.svg"/>
+          </div>
           <Link href="/landing">
             <a className={classes.homelink}>Home</a>
           </Link>
@@ -267,11 +281,11 @@ export default function ClippedDrawer() {
         </div>
 
 
-        <Typography variant="subtitle2" noWrap>Portfolio Performance<br /><br /></Typography>
+        <Typography variant="h5" noWrap className={classes.bodyTitles}>Portfolio Performance<br /><br /></Typography>
 
         <div className={classes.chartThree}><MixBarChart /></div>
 
-        <Typography variant="subtitle2" noWrap>Transaction History<br /><br /></Typography>
+        <Typography variant="h5" className={classes.bodyTitles} noWrap>Transaction History<br /><br /></Typography>
         <DashboardDataTable />
 
         </Grid>
