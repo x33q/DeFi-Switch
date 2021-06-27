@@ -8,6 +8,7 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TablePagination from '@material-ui/core/TablePagination';
 import TableRow from '@material-ui/core/TableRow';
+import Avatar from '@material-ui/core/Avatar';
 
 const columns = [
   { id: 'name', label: 'Name', minWidth: 170 },

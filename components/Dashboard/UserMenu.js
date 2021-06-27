@@ -1,6 +1,10 @@
 import React from 'react';
 import Badge from '@material-ui/core/Badge';
 import Avatar from '@material-ui/core/Avatar';
+
+import Menu from '@material-ui/core/Menu';
+import MenuItem from '@material-ui/core/MenuItem';
+
 import { makeStyles, withStyles } from '@material-ui/core/styles';
 
 const StyledBadge = withStyles((theme) => ({
@@ -48,14 +52,29 @@ const useStyles = makeStyles((theme) => ({
       margin: theme.spacing(0),
     },
   },
+  menu: {
+    marginTop: '40px',
+  },
+  menuItem: {
+    fontSize: '13px',
+  }
 }));
 
 export default function BadgeAvatars() {
   const classes = useStyles();
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
 
   return (
     <div className={classes.root}>
       <StyledBadge
+        onClick={handleClick}
         overlap="circle"
         anchorOrigin={{
           vertical: 'bottom',
@@ -65,6 +84,20 @@ export default function BadgeAvatars() {
       >
         <Avatar alt="MV" className={classes.avatarColor} />
       </StyledBadge>
+      <Menu
+        className={classes.menu}
+        id="basic-menu"
+        anchorEl={anchorEl}
+        open={open}
+        onClose={handleClose}
+        MenuListProps={{
+          'aria-labelledby': 'basic-button',
+        }}
+      >
+        <MenuItem className={classes.menuItem} onClick={handleClose}>Profile</MenuItem>
+        <MenuItem className={classes.menuItem} onClick={handleClose}>My account</MenuItem>
+        <MenuItem className={classes.menuItem} onClick={handleClose}>Logout</MenuItem>
+      </Menu>
     </div>
   );
 }
