@@ -100,7 +100,7 @@ export default function LoginPage(props) {
                     />
                   </CardBody>
                   <CardFooter className={classes.cardFooter}>
-                    <Button fullWidth color="gray" size="lg">
+                    <Button fullWidth color="success" size="lg">
                       Submit
                     </Button>
                   </CardFooter>

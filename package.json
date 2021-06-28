@@ -39,6 +39,7 @@
     "@material-ui/x-grid": "^4.0.0-alpha.32",
     "@material-ui/x-grid-data-generator": "^4.0.0-alpha.32",
     "classnames": "2.3.1",
+    "material-ui-dropzone": "^3.5.0",
     "moment": "2.29.1",
     "mui-data-grid": "^0.2.2",
     "next": "10.2.0",
