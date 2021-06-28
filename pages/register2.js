@@ -23,11 +23,9 @@ import CustomInput from "components/CustomInput/CustomInput.js";
 import Checkbox from "@material-ui/core/Checkbox";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 
-// Import Register Form 1
-import RegisterStep1 from "components/RegisterForms/RegisterStep1.js";
-import Stepper1 from "components/RegisterForms/Stepper1.js";
+import Stepper2 from "components/RegisterForms/Stepper2.js";
 
-import styles from "styles/jss/nextjs-material-kit/pages/registerPage.js";
+import styles from "styles/jss/nextjs-material-kit/pages/registerPage2.js";
 
 const useStyles = makeStyles(styles);
 
@@ -66,9 +64,9 @@ export default function RegisterPage(props) {
                   <GridContainer spacing={0} justify="center">
                     <GridItem sm={12} md={5} lg={5}>
                       <CardHeader color="primary" className={classes.cardHeader}>
-                        <h4 className={classes.formTitle}>Register</h4>
-                        <p className={classes.formSubtitle}>Get Started and invest in DeFi in under 7 minutes.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                        <h4 className={classes.formTitle}>Step 2</h4>
+                        <p className={classes.formSubtitle}>Customer Financial Informaton</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  consectetur adipiscing elit,  consectetur adipiscing elit, incididunt.</p>
                       </CardHeader>
                     </GridItem>
                     <GridItem sm={12} md={7} lg={7}>
@@ -176,15 +174,11 @@ export default function RegisterPage(props) {
                           </GridItem>
                         </GridContainer>
 
-                        <RegisterStep1 />
 
                       </CardBody>
 
                       <CardFooter className={classes.cardFooter}>
-                        <Button
-                        href="/register2"
-                        fullWidth color="gray"
-                        size="lg">
+                        <Button fullWidth color="gray" size="lg">
                           Get started
                         </Button>
                       </CardFooter><br />
@@ -194,10 +188,11 @@ export default function RegisterPage(props) {
               </Card>
             </GridItem>
             <GridItem sm={9}>
-              <Stepper1 />
+              <Stepper2 />
             </GridItem>
           </GridContainer>
         </div>
+
         <Footer whiteFont />
       </div>
     </div>
