@@ -35,6 +35,14 @@ const landingPageStyle = {
   heroBG: {
     backgroundColor: '#0c1623',
   },
+  tempGraphic: {
+    backgroundColor: 'blue',
+    width: 'calc(100% - 40px)',
+    minHeight: 'calc(100% - 40px)',
+    marginTop: '40px',
+    marginLeft: '40px',
+    borderRadius: '400px',
+  },
 };
 
 export default landingPageStyle;
