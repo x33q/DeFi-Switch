@@ -154,8 +154,7 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: '7px',
   },
   avatarLogo: {
-    backgroundImage: 'linear-gradient(to bottom, #232847 0%, #161a2f 100%)',
-    backgroundColor: 'rgba(0,0,0,0)',
+    backgroundColor: '#2101fc',
     color: '#FFF',
     height: '32px',
     width: '32px',

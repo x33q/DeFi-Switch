@@ -47,7 +47,7 @@ export default function LandingPage(props) {
           <GridContainer spacing={0}>
             <GridItem sm={12} md={6}>
               <h1 className={classes.title}>Simple Rand Investing into Complex Decentralised Finance.</h1>
-              <h4>
+              <h4 className={classes.desc}>
                 Put your ZAR to work in the world of DeFi easily, no complicated wallets or risky transactions &amp; up to 10% APR with zero deposit fees.
                 <br /><br />
                 It’s as simple as a normal deposit with money you understand.

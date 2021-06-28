@@ -161,6 +161,21 @@ const headerStyle = {
     paddingLeft: "0",
     ...transition,
   },
+  ZALogo: {
+    maxHeight: '15px',
+    position: 'absolute',
+    top: '18px',
+    right: '5px',
+  },
+  avatar: {
+    width: '30px',
+    height: '30px',
+    marginRight: '13px',
+    color: '#fff',
+    backgroundColor: '#2101fc',
+    fontWeight: '700',
+    fontSize: '12px',
+  },
 };
 
 export default headerStyle;

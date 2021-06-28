@@ -14,9 +14,13 @@ const landingPageStyle = {
     minHeight: "32px",
     color: "#FFFFFF",
     textDecoration: "none",
+    fontSize: '3.2em',
+  },
+  desc: {
+    fontSize: "1rem",
   },
   subtitle: {
-    fontSize: "1.313rem",
+    fontSize: "1.2rem",
     maxWidth: "500px",
     margin: "10px auto 0",
   },
@@ -34,9 +38,10 @@ const landingPageStyle = {
   },
   heroBG: {
     backgroundColor: '#0c1623',
+    maxHeight: '80vh',
   },
   tempGraphic: {
-    backgroundColor: 'blue',
+    backgroundColor: 'rgba(255,255,255,0.1)',
     width: 'calc(100% - 40px)',
     minHeight: 'calc(100% - 40px)',
     marginTop: '40px',

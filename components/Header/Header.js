@@ -12,6 +12,7 @@ import IconButton from "@material-ui/core/IconButton";
 import Button from "@material-ui/core/Button";
 import Hidden from "@material-ui/core/Hidden";
 import Drawer from "@material-ui/core/Drawer";
+import Avatar from '@material-ui/core/Avatar';
 // @material-ui/icons
 import Menu from "@material-ui/icons/Menu";
 // core components
@@ -68,9 +69,12 @@ export default function Header(props) {
   );
   return (
     <AppBar className={appBarClasses}>
+
       <Toolbar className={classes.container}>
         {leftLinks !== undefined ? brandComponent : null}
+        <Avatar className={classes.avatar}>DS</Avatar>
         <div className={classes.flex}>
+          <img className={classes.ZALogo} alt="ZA" src="http://purecatamphetamine.github.io/country-flag-icons/3x2/ZA.svg"/>
           {leftLinks !== undefined ? (
             <Hidden smDown implementation="css">
               {leftLinks}
