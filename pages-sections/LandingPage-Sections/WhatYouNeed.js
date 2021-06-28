@@ -7,10 +7,12 @@ import Fingerprint from "@material-ui/icons/Fingerprint";
 import ListAltRoundedIcon from '@material-ui/icons/ListAltRounded';
 import HomeWorkRoundedIcon from '@material-ui/icons/HomeWorkRounded';
 import AccountBalanceIcon from '@material-ui/icons/AccountBalance';
+import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import InfoArea from "components/InfoArea/InfoArea.js";
+import Button from "components/CustomButtons/Button.js";
 
 import styles from "styles/jss/nextjs-material-kit/pages/landingPageSections/WhatYouNeed.js";
 
@@ -66,6 +68,17 @@ export default function ProductSection() {
               iconColor="primary"
               vertical
             />
+          </GridItem>
+          <GridItem sm={12}>
+          <GridContainer>
+          <GridItem sm={3}></GridItem>
+            <GridItem sm={6}><br /><br />
+            <Button href="/register" size="lg" color="success" fullWidth round>
+              Get started <ArrowForwardIcon className={classes.icons} />
+            </Button>
+            </GridItem>
+            <GridItem sm={3}></GridItem>
+            </GridContainer>
           </GridItem>
         </GridContainer>
       </div>

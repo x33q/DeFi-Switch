@@ -16,6 +16,9 @@ const productStyle = {
   description: {
     color: "#666",
   },
+  icons: {
+    margin: '0 0 0 10px',
+  },
 };
 
 export default productStyle;
