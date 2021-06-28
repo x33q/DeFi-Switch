@@ -45,7 +45,7 @@ const signupPageStyle = {
     },
   },
   form: {
-    margin: "0 20px 0 0px",
+    margin: "0 0px 0 0px",
   },
   cardHeader: {
     width: "auto",
@@ -53,7 +53,7 @@ const signupPageStyle = {
     marginLeft: "0px",
     marginRight: "0px",
     marginTop: "0px",
-    padding: "50px",
+    padding: "80px",
     minHeight: '100%',
     borderRadius: '5px 0px 0px 5px',
     display: 'flex',
@@ -64,7 +64,7 @@ const signupPageStyle = {
   },
   cardBody: {
     textAlign: 'left',
-    marginRight: '30px',
+    marginRight: '10px',
     paddingTop: '30px',
   },
   cardHero: {
@@ -111,11 +111,33 @@ const signupPageStyle = {
     margin: '0px 0px 10px 0px',
     fontWeight: '700',
     fontSize: '2em',
+    width: '100%',
   },
   formSubtitle: {
     margin: '0px 0px 10px 0px',
     fontWeight: '400',
     fontSize: '1.3em',
+  },
+  uploadMaster: {
+    backgroundColor: '#fff',
+    textAlign: 'center',
+    border: '1px solid rgba(0,0,0,0.1)',
+    borderRadius: '6px',
+    padding: '20px 20px 25px 20px',
+  },
+  iconHolder: {
+    height: '80px',
+    width: '60px',
+  },
+  uploadTitle: {
+    color: '#000',
+    fontSize: '1em',
+  },
+  uploadDesc: {
+    color: '#000',
+    fontSize: '0.9em',
+    lineHeight: '1.3rem',
+    marginBottom: '20px',
   },
 };
 

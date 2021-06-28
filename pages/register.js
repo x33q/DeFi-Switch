@@ -58,7 +58,7 @@ export default function RegisterPage(props) {
         <div className={classes.container}>
           <GridContainer spacing={0} justify="center">
 
-            <GridItem sm={12} lg={9}>
+            <GridItem sm={12} lg={12}>
 
               <Card className={classes[cardAnimaton]}>
                 <form className={classes.form}>
@@ -183,7 +183,7 @@ export default function RegisterPage(props) {
                       <CardFooter className={classes.cardFooter}>
                         <Button
                         href="/register2"
-                        fullWidth color="gray"
+                        fullWidth color="success"
                         size="lg">
                           Get started
                         </Button>
@@ -193,7 +193,7 @@ export default function RegisterPage(props) {
                 </form>
               </Card>
             </GridItem>
-            <GridItem sm={9}>
+            <GridItem sm={8}>
               <Stepper1 />
             </GridItem>
           </GridContainer>

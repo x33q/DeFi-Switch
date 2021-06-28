@@ -53,7 +53,7 @@ const signupPageStyle = {
     marginLeft: "0px",
     marginRight: "0px",
     marginTop: "0px",
-    padding: "50px",
+    padding: "80px",
     minHeight: '100%',
     borderRadius: '5px 0px 0px 5px',
     display: 'flex',

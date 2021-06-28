@@ -8,6 +8,7 @@ import Email from "@material-ui/icons/Email";
 import People from "@material-ui/icons/People";
 import FingerprintIcon from '@material-ui/icons/Fingerprint';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+import HomeWorkOutlinedIcon from '@material-ui/icons/HomeWorkOutlined';
 // core components
 import Header from "components/Header/Header.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
@@ -23,6 +24,7 @@ import CustomInput from "components/CustomInput/CustomInput.js";
 import Checkbox from "@material-ui/core/Checkbox";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 
+import UploadFile from "components/RegisterForms/UploadFile.js";
 import Stepper2 from "components/RegisterForms/Stepper2.js";
 
 import styles from "styles/jss/nextjs-material-kit/pages/registerPage2.js";
@@ -56,130 +58,44 @@ export default function RegisterPage(props) {
         <div className={classes.container}>
           <GridContainer spacing={0} justify="center">
 
-            <GridItem sm={12} lg={9}>
+            <GridItem sm={12} lg={12}>
 
               <Card className={classes[cardAnimaton]}>
                 <form className={classes.form}>
-
                   <GridContainer spacing={0} justify="center">
                     <GridItem sm={12} md={5} lg={5}>
                       <CardHeader color="primary" className={classes.cardHeader}>
-                        <h4 className={classes.formTitle}>Step 2</h4>
-                        <p className={classes.formSubtitle}>Customer Financial Informaton</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  consectetur adipiscing elit,  consectetur adipiscing elit, incididunt.</p>
+                        <p>Step 2</p>
+                        <h4 className={classes.formTitle}>Customer Financial Informaton</h4>
+                        <p className={classes.formSubtitle}>Please complete the required financial compliance steps.</p>
                       </CardHeader>
                     </GridItem>
                     <GridItem sm={12} md={7} lg={7}>
                       <CardBody className={classes.cardBody}>
-                        <GridContainer spacing={0} justify="center">
-                          <GridItem xs={12} sm={6} md={6}>
-                            <CustomInput
-                              labelText="First Name..."
-                              id="first"
-                              formControlProps={{
-                                fullWidth: true,
-                              }}
-                              inputProps={{
-                                type: "text",
-                                endAdornment: (
-                                  <InputAdornment position="end">
-                                    <AccountCircleIcon className={classes.inputIconsColor} />
-                                  </InputAdornment>
-                                ),
-                              }}
-                            />
-                            <CustomInput
-                              labelText="Surname..."
-                              id="surname"
-                              formControlProps={{
-                                fullWidth: true,
-                              }}
-                              inputProps={{
-                                type: "text",
-                                endAdornment: (
-                                  <InputAdornment position="end">
-                                    <AccountCircleIcon className={classes.inputIconsColor} />
-                                  </InputAdornment>
-                                ),
-                              }}
-                            />
-                            <CustomInput
-                              labelText="SA ID Number..."
-                              id="idnumber"
-                              formControlProps={{
-                                fullWidth: true,
-                              }}
-                              inputProps={{
-                                type: "number",
-                                endAdornment: (
-                                  <InputAdornment position="end">
-                                    <FingerprintIcon className={classes.inputIconsColor} />
-                                  </InputAdornment>
-                                ),
-                              }}
-                            />
+
+                        <GridContainer spacing={2} >
+                          <GridItem sm={6}>
+                            <div className={classes.uploadMaster}>
+                              <FingerprintIcon className={classes.iconHolder} />
+                              <h6 className={classes.uploadTitle}>Proof of Identity</h6>
+                              <p className={classes.uploadDesc}>Take a photo of your SA ID book, if you have a card, take a photo of the front first.</p>
+                              <UploadFile />
+                            </div>
                           </GridItem>
-                          <GridItem xs={12} sm={6} md={6}>
-                            <CustomInput
-                              labelText="Email..."
-                              id="email"
-                              formControlProps={{
-                                fullWidth: true,
-                              }}
-                              inputProps={{
-                                type: "email",
-                                endAdornment: (
-                                  <InputAdornment position="end">
-                                    <Email className={classes.inputIconsColor} />
-                                  </InputAdornment>
-                                ),
-                              }}
-                            />
-                            <CustomInput
-                              labelText="Password"
-                              id="pass"
-                              formControlProps={{
-                                fullWidth: true,
-                              }}
-                              inputProps={{
-                                type: "password",
-                                endAdornment: (
-                                  <InputAdornment position="end">
-                                    <Icon className={classes.inputIconsColor}>
-                                      lock_outline
-                                    </Icon>
-                                  </InputAdornment>
-                                ),
-                                autoComplete: "off",
-                              }}
-                            />
-                            <CustomInput
-                              labelText="Confirm Password"
-                              id="pass"
-                              formControlProps={{
-                                fullWidth: true,
-                              }}
-                              inputProps={{
-                                type: "password",
-                                endAdornment: (
-                                  <InputAdornment position="end">
-                                    <Icon className={classes.inputIconsColor}>
-                                      lock_outline
-                                    </Icon>
-                                  </InputAdornment>
-                                ),
-                                autoComplete: "off",
-                              }}
-                            />
+                          <GridItem sm={6}>
+                            <div className={classes.uploadMaster}>
+                              <HomeWorkOutlinedIcon className={classes.iconHolder} />
+                              <h6 className={classes.uploadTitle}>Proof of Address</h6>
+                              <p className={classes.uploadDesc}>Please take a photo or upload a proof of address document less than 3 months old.</p>
+                              <UploadFile />
+                            </div>
                           </GridItem>
                         </GridContainer>
-
-
                       </CardBody>
 
                       <CardFooter className={classes.cardFooter}>
-                        <Button fullWidth color="gray" size="lg">
-                          Get started
+                        <Button href="/register" fullWidth color="success" size="lg">
+                          Confirm Details
                         </Button>
                       </CardFooter><br />
                   </GridItem>
@@ -187,7 +103,7 @@ export default function RegisterPage(props) {
                 </form>
               </Card>
             </GridItem>
-            <GridItem sm={9}>
+            <GridItem sm={8}>
               <Stepper2 />
             </GridItem>
           </GridContainer>
