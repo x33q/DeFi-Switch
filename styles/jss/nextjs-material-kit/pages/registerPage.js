@@ -7,7 +7,7 @@ const signupPageStyle = {
     position: "relative",
     paddingTop: "20vh",
     color: "#FFFFFF",
-    paddingBottom: "200px",
+    paddingBottom: "100px",
   },
   cardHidden: {
     opacity: "0",
@@ -45,16 +45,27 @@ const signupPageStyle = {
     },
   },
   form: {
-    margin: "0",
+    margin: "0 20px 0 0px",
   },
   cardHeader: {
     width: "auto",
-    textAlign: "center",
-    marginLeft: "20px",
-    marginRight: "20px",
-    marginTop: "-40px",
-    padding: "20px 0",
-    marginBottom: "15px",
+    textAlign: "left",
+    marginLeft: "0px",
+    marginRight: "0px",
+    marginTop: "0px",
+    padding: "50px",
+    minHeight: '100%',
+    borderRadius: '5px 0px 0px 5px',
+    display: 'flex',
+    alignItems: 'flex-end',
+    alignContent: 'center',
+    justifyContent: 'flex-start',
+    flexWrap: 'wrap',
+  },
+  cardBody: {
+    textAlign: 'left',
+    marginRight: '30px',
+    paddingTop: '30px',
   },
   cardHero: {
     width: "auto",
@@ -94,7 +105,17 @@ const signupPageStyle = {
     padding: "0",
   },
   inputIconsColor: {
-    color: "#495057",
+    color: "#2101fc",
+  },
+  formTitle: {
+    margin: '0px 0px 10px 0px',
+    fontWeight: '700',
+    fontSize: '2em',
+  },
+  formSubtitle: {
+    margin: '0px 0px 10px 0px',
+    fontWeight: '400',
+    fontSize: '1.3em',
   },
 };
 

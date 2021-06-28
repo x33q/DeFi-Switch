@@ -20,7 +20,6 @@ import styles from "styles/jss/nextjs-material-kit/pages/landingPage.js";
 // Sections for this page
 import ProductSection from "pages-sections/LandingPage-Sections/ProductSection.js";
 import TeamSection from "pages-sections/LandingPage-Sections/TeamSection.js";
-import WorkSection from "pages-sections/LandingPage-Sections/WorkSection.js";
 
 const dashboardRoutes = [];
 
@@ -43,7 +42,7 @@ export default function LandingPage(props) {
         }}
         {...rest}
       />
-      <Parallax responsive image="/img/bg7.jpg">
+      <Parallax responsive image="/img/bg7.jpg" className={classes.heroBG}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={7}>
@@ -59,12 +58,9 @@ export default function LandingPage(props) {
               <Button
                 color="primary"
                 size="lg"
-                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ref=creativetim"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/register"
               >
-                <i className="fas fa-play" />
-                Watch video
+                Register
               </Button>
             </GridItem>
           </GridContainer>
@@ -74,7 +70,6 @@ export default function LandingPage(props) {
         <div className={classes.container}>
           <ProductSection />
           <TeamSection />
-          <WorkSection />
         </div>
       </div>
       <Footer />

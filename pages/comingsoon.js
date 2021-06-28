@@ -5,7 +5,7 @@ import InputAdornment from "@material-ui/core/InputAdornment";
 import Icon from "@material-ui/core/Icon";
 // @material-ui/icons
 import Email from "@material-ui/icons/Email";
-import People from "@material-ui/icons/People";
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 // core components
 import Header from "components/Header/Header.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
@@ -78,7 +78,7 @@ export default function LoginPage(props) {
                         type: "text",
                         endAdornment: (
                           <InputAdornment position="end">
-                            <People className={classes.inputIconsColor} />
+                            <AccountCircleIcon className={classes.inputIconsColor} />
                           </InputAdornment>
                         ),
                       }}
@@ -100,7 +100,7 @@ export default function LoginPage(props) {
                     />
                   </CardBody>
                   <CardFooter className={classes.cardFooter}>
-                    <Button simple color="primary" size="lg">
+                    <Button fullWidth color="gray" size="lg">
                       Submit
                     </Button>
                   </CardFooter>

@@ -32,6 +32,9 @@ const landingPageStyle = {
     boxShadow:
       "0 16px 24px 2px rgba(0, 0, 0, 0.03), 0 6px 30px 5px rgba(0, 0, 0, 0.03), 0 8px 10px -5px rgba(0, 0, 0, 0.03)",
   },
+  heroBG: {
+    backgroundColor: '#0c1623',
+  },
 };
 
 export default landingPageStyle;
