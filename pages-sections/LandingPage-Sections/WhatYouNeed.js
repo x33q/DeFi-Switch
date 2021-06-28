@@ -44,7 +44,7 @@ export default function ProductSection() {
           </GridItem>
           <GridItem xs={12} sm={12} md={3}>
             <InfoArea
-              title="ZA ID Document"
+              title="South African ID"
               description="A copy of your SA barcoded ID (SA Citizens only for now)"
               icon={Fingerprint}
               iconColor="primary"
@@ -69,16 +69,10 @@ export default function ProductSection() {
               vertical
             />
           </GridItem>
-          <GridItem sm={12}>
-          <GridContainer>
-          <GridItem sm={3}></GridItem>
-            <GridItem sm={6}><br /><br />
-            <Button href="/register" size="lg" color="success" fullWidth round>
-              Get started <ArrowForwardIcon className={classes.icons} />
-            </Button>
-            </GridItem>
-            <GridItem sm={3}></GridItem>
-            </GridContainer>
+          <GridItem sm={12}><br /><br />
+          <Button href="/register" size="lg" color="success" fullWidth round>
+            Get started <ArrowForwardIcon className={classes.icons} />
+          </Button>
           </GridItem>
         </GridContainer>
       </div>

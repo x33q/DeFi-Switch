@@ -12,6 +12,7 @@ const productStyle = {
     marginTop: "30px",
     minHeight: "32px",
     textDecoration: "none",
+    color: '#000',
   },
   description: {
     color: "#666",
@@ -24,7 +25,7 @@ const productStyle = {
     marginBottom: '16px',
   },
   replaceDesc: {
-    color: '#999',
+    color: '#333',
     fontSize: '0.9em',
     fontWeight: '300',
   },
