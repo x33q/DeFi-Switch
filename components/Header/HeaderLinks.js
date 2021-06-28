@@ -30,7 +30,7 @@ export default function HeaderLinks(props) {
         <CustomDropdown
           noLiPadding
           navDropdown
-          buttonText="Information"
+          buttonText="About"
           buttonProps={{
             className: classes.navLink,
             color: "transparent",
@@ -38,10 +38,10 @@ export default function HeaderLinks(props) {
           buttonIcon={Apps}
           dropdownList={[
             <Link href="/comingsoon">
-              <a className={classes.dropdownLink}>Coming Soon Page</a>
+              <a className={classes.dropdownLink}>Coming Soon</a>
             </Link>,
             <Link href="/components">
-              <a className={classes.dropdownLink}>All components</a>
+              <a className={classes.dropdownLink}>Components</a>
             </Link>,
             <a
               href="https://demos.creative-tim.com/nextjs-material-kit/documentation/tutorial"

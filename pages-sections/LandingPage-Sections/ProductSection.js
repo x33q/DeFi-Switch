@@ -2,6 +2,8 @@ import React from "react";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 
+import ReactCountryFlag from "react-country-flag"
+
 // @material-ui/icons
 import AccountBalanceWalletIcon from '@material-ui/icons/AccountBalanceWallet';
 import VerifiedUser from "@material-ui/icons/VerifiedUser";
@@ -23,38 +25,48 @@ export default function ProductSection() {
         <GridItem xs={12} sm={12} md={8}>
           <h2 className={classes.title}>Why use DeFi Switch?</h2>
           <h5 className={classes.description}>
-            This is the paragraph where you can write more details about your
-            product. Keep you user engaged by providing meaningful information.
-            Remember that by this time, the user is curious, otherwise he wouldn
-            {"'"}t scroll to get here. Add a button if you want the user to see
-            more.
+          This is the paragraph where you can write more details about your
+          product. Keep you user engaged by providing meaningful information.<br />
           </h5>
         </GridItem>
       </GridContainer>
       <div>
         <GridContainer>
-          <GridItem xs={12} sm={12} md={4}>
-            <InfoArea
-              title="ZAR Only"
-              description="We only accept ZAR. You can only withdraw ZAR. It’s as simple as it gets with money you understand."
-              icon={AccountBalanceWalletIcon}
-              iconColor="info"
-              vertical
-            />
+          <GridItem xs={12} sm={12} md={3}>
+          <ReactCountryFlag className={classes.flag}
+              countryCode="ZA"
+              svg
+              style={{
+                  width: '4em',
+                  height: '2.6em',
+              }}
+          />
+            <h3 className={classes.replaceTitle}>ZAR Only</h3>
+            <p className={classes.replaceDesc}>We only accept ZAR. You can only withdraw ZAR. It’s as simple as it gets with money you understand.</p>
+
           </GridItem>
-          <GridItem xs={12} sm={12} md={4}>
+          <GridItem xs={12} sm={12} md={3}>
             <InfoArea
-              title="No Hassles"
+              title="Zero Hassles"
               description="We take care of all the swapping, bridging, staking & harvesting so you can just do the investing."
               icon={VerifiedUser}
-              iconColor="success"
+              iconColor="primary"
               vertical
             />
           </GridItem>
-          <GridItem xs={12} sm={12} md={4}>
+          <GridItem xs={12} sm={12} md={3}>
             <InfoArea
-              title="Fingerprint"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+              title="Zero Limits"
+              description="No set term or investment premium, start with whatever is safe for you."
+              icon={Fingerprint}
+              iconColor="primary"
+              vertical
+            />
+          </GridItem>
+          <GridItem xs={12} sm={12} md={3}>
+            <InfoArea
+              title="Zero Lockups"
+              description="No lock up periods or complicated penalties, access your funds whenever you want."
               icon={Fingerprint}
               iconColor="primary"
               vertical

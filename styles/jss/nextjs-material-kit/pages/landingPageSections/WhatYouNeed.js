@@ -15,21 +15,6 @@ const productStyle = {
   },
   description: {
     color: "#666",
-    marginBottom: '30px',
-  },
-  replaceTitle: {
-    color: '#3c4859',
-    fontSize: '1.1em',
-    fontWeight: '700',
-    marginBottom: '16px',
-  },
-  replaceDesc: {
-    color: '#999',
-    fontSize: '0.9em',
-    fontWeight: '300',
-  },
-  flag: {
-    margin: '30px 0 28px 0',
   },
 };
 

@@ -54,7 +54,7 @@ const typographyStyle = {
     fontSize: "65%",
     fontWeight: "400",
     lineHeight: "1",
-    color: "#777",
+    color: "#333",
   },
 };
 

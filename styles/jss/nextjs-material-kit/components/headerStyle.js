@@ -162,10 +162,10 @@ const headerStyle = {
     ...transition,
   },
   ZALogo: {
-    maxHeight: '15px',
+    maxHeight: '14px',
     position: 'absolute',
     top: '18px',
-    right: '5px',
+    left: '70px',
   },
   avatar: {
     width: '30px',
