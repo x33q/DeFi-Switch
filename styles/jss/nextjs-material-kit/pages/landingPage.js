@@ -42,14 +42,14 @@ const landingPageStyle = {
   heroBG: {
     backgroundColor: '#0c1623',
     maxHeight: '100vh',
+    position: 'relative',
   },
-  tempGraphic: {
-    backgroundColor: 'rgba(255,255,255,0.1)',
-    width: 'calc(100% - 40px)',
-    minHeight: 'calc(100% - 40px)',
-    marginTop: '40px',
-    marginLeft: '40px',
-    borderRadius: '400px',
+  bgVideo: {
+    position: 'absolute',
+    top: '0',
+    left: '-10%',
+    margin: '0px',
+    opacity: '0.2',
   },
 };
 

@@ -1,6 +1,9 @@
 import React from "react";
 // nodejs library that concatenates classes
 import classNames from "classnames";
+
+import ReactPlayer from 'react-player'
+
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 
@@ -42,7 +45,10 @@ export default function LandingPage(props) {
         }}
         {...rest}
       />
-      <Parallax responsive image="/img/bg8.jpg" className={classes.heroBG}>
+      <Parallax responsive image="/img/bg7.jpg" className={classes.heroBG}>
+
+        <ReactPlayer width="120%" height="120%" className={classes.bgVideo} url='/img/Defi-BG-01.mp4' playing="true" loop="true" />
+
         <div className={classes.container}>
           <GridContainer spacing={0} className={classes.mainIntro}>
             <GridItem sm={12}>

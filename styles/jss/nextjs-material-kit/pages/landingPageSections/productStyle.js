@@ -41,11 +41,11 @@ const productStyle = {
     padding: '60px !important',
   },
   whyItem3: {
-    backgroundColor: '#e91e63',
+    backgroundColor: '#1c193a',
     padding: '60px !important',
   },
   whyItem4: {
-    backgroundColor: '#ff9800',
+    backgroundColor: '#f0f0f0',
     padding: '60px !important',
   },
 };
