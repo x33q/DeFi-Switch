@@ -14,7 +14,7 @@ const landingPageStyle = {
     minHeight: "32px",
     color: "#FFFFFF",
     textDecoration: "none",
-    fontSize: '3.2em',
+    fontSize: '4.2em',
   },
   desc: {
     fontSize: "1rem",
@@ -30,15 +30,18 @@ const landingPageStyle = {
     zIndex: "3",
   },
   mainRaised: {
-    margin: "-60px 80px 0px",
-    // maxWidth: "1600px",
+    margin: "-60px auto 0px",
+    maxWidth: "1400px",
     borderRadius: "6px",
     boxShadow:
       "0 16px 24px 2px rgba(0, 0, 0, 0.03), 0 6px 30px 5px rgba(0, 0, 0, 0.03), 0 8px 10px -5px rgba(0, 0, 0, 0.03)",
   },
+  mainIntro: {
+    textAlign: 'center',
+  },
   heroBG: {
     backgroundColor: '#0c1623',
-    maxHeight: '80vh',
+    maxHeight: '100vh',
   },
   tempGraphic: {
     backgroundColor: 'rgba(255,255,255,0.1)',

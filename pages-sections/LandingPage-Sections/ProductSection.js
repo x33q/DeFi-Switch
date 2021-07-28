@@ -31,8 +31,8 @@ export default function ProductSection() {
         </GridItem>
       </GridContainer>
       <div>
-        <GridContainer>
-          <GridItem xs={12} sm={12} md={3}>
+        <GridContainer spacing={4}>
+          <GridItem className={classes.whyItem1} xs={12} sm={12} md={6}>
           <ReactCountryFlag className={classes.flag}
               countryCode="ZA"
               svg
@@ -45,30 +45,30 @@ export default function ProductSection() {
             <p className={classes.replaceDesc}>We only accept ZAR. You can only withdraw ZAR. It’s as simple as it gets with money you understand.</p>
 
           </GridItem>
-          <GridItem xs={12} sm={12} md={3}>
+          <GridItem className={classes.whyItem2} xs={12} sm={12} md={6}>
             <InfoArea
               title="Zero Hassles"
               description="We take care of all the swapping, bridging, staking & harvesting so you can just do the investing."
               icon={VerifiedUser}
-              iconColor="primary"
+              iconColor="#FFF"
               vertical
             />
           </GridItem>
-          <GridItem xs={12} sm={12} md={3}>
+          <GridItem className={classes.whyItem3} xs={12} sm={12} md={6}>
             <InfoArea
               title="Zero Limits"
               description="No set term or investment premium, start with whatever is safe for you."
               icon={Fingerprint}
-              iconColor="primary"
+              iconColor="#FFF"
               vertical
             />
           </GridItem>
-          <GridItem xs={12} sm={12} md={3}>
+          <GridItem className={classes.whyItem4} xs={12} sm={12} md={6}>
             <InfoArea
               title="Zero Lockups"
               description="No lock up periods or complicated penalties, access your funds whenever you want."
               icon={Fingerprint}
-              iconColor="primary"
+              iconColor="#FFF"
               vertical
             />
           </GridItem>

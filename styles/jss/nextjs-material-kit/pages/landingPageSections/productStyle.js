@@ -2,7 +2,7 @@ import { title } from "styles/jss/nextjs-material-kit.js";
 
 const productStyle = {
   section: {
-    padding: "70px 0",
+    padding: "40px 0",
     textAlign: "center",
     borderBottom: '1px solid rgba(0,0,0,0.1)',
   },
@@ -16,21 +16,37 @@ const productStyle = {
   },
   description: {
     color: "#666",
-    marginBottom: '30px',
+    marginBottom: '60px',
   },
   replaceTitle: {
-    color: '#3c4859',
+    color: '#FFF',
     fontSize: '1.1em',
     fontWeight: '700',
     marginBottom: '16px',
   },
   replaceDesc: {
-    color: '#333',
+    color: '#FFF',
     fontSize: '0.9em',
     fontWeight: '300',
   },
   flag: {
     margin: '30px 0 28px 0',
+  },
+  whyItem1: {
+    backgroundColor: '#8800fc',
+    padding: '60px !important',
+  },
+  whyItem2: {
+    backgroundColor: '#4caf50',
+    padding: '60px !important',
+  },
+  whyItem3: {
+    backgroundColor: '#e91e63',
+    padding: '60px !important',
+  },
+  whyItem4: {
+    backgroundColor: '#ff9800',
+    padding: '60px !important',
   },
 };
 

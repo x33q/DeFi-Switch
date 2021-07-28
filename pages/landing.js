@@ -42,10 +42,10 @@ export default function LandingPage(props) {
         }}
         {...rest}
       />
-      <Parallax responsive image="/img/bg7.jpg" className={classes.heroBG}>
+      <Parallax responsive image="/img/bg8.jpg" className={classes.heroBG}>
         <div className={classes.container}>
-          <GridContainer spacing={0}>
-            <GridItem sm={12} md={6}>
+          <GridContainer spacing={0} className={classes.mainIntro}>
+            <GridItem sm={12}>
               <h1 className={classes.title}>Simple Rand Investing into Complex Decentralised Finance.</h1>
               <h4 className={classes.desc}>
                 Put your ZAR to work in the world of DeFi easily, no complicated wallets or risky transactions &amp; up to 10% APR with zero deposit fees.
@@ -63,16 +63,13 @@ export default function LandingPage(props) {
                 Register
               </Button>
             </GridItem>
-            <GridItem sm={0} md={6}>
-              <div className={classes.tempGraphic}></div>
-            </GridItem>
           </GridContainer>
         </div>
       </Parallax>
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
           <ProductSection />
-          <WhatYouNeed /><br /><br /><br />
+          <WhatYouNeed />
         </div>
       </div>
       <Footer />

@@ -33,7 +33,7 @@ export default function ProductSection() {
       </GridContainer>
       <div>
         <GridContainer>
-          <GridItem xs={12} sm={12} md={3}>
+          <GridItem className={classes.whyItem} xs={12} sm={12} md={6}>
             <InfoArea
               title="Registration Form"
               description="Completed registration form"
@@ -42,7 +42,7 @@ export default function ProductSection() {
               vertical
             />
           </GridItem>
-          <GridItem xs={12} sm={12} md={3}>
+          <GridItem className={classes.whyItem} xs={12} sm={12} md={6}>
             <InfoArea
               title="South African ID"
               description="A copy of your SA barcoded ID (SA Citizens only for now)"
@@ -51,7 +51,7 @@ export default function ProductSection() {
               vertical
             />
           </GridItem>
-          <GridItem xs={12} sm={12} md={3}>
+          <GridItem className={classes.whyItem} xs={12} sm={12} md={6}>
             <InfoArea
               title="Proof of Address"
               description="Proof of residential address less than 3 months old."
@@ -60,7 +60,7 @@ export default function ProductSection() {
               vertical
             />
           </GridItem>
-          <GridItem xs={12} sm={12} md={3}>
+          <GridItem className={classes.whyItem} xs={12} sm={12} md={6}>
             <InfoArea
               title="Proof of Deposit"
               description="Proof of deposit or transfer into DeFi Switch investment account."
