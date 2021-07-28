@@ -224,9 +224,9 @@ export default function ClippedDrawer() {
         <Toolbar />
         <div className={classes.drawerContainer}>
           <List>
-            {['Dashboard'].map((text, index) => (
+            {['Dashboard','Deposit','Withdraw'].map((text, index) => (
               <ListItem button key={text}>
-                <ListItemIcon>{index % 2 === 0 ? <DashboardIcon className={classes.menuIcon} color="info" /> : <AccountCircleIcon className={classes.menuIcon} color="info" />}</ListItemIcon>
+                <ListItemIcon>{index % 3 === 0 ? <DashboardIcon className={classes.menuIcon} color="info" /> : <AccountCircleIcon className={classes.menuIcon} color="info" />}</ListItemIcon>
                 <ListItemText classes={{primary:classes.listItemText}} primary={text} />
               </ListItem>
             ))}

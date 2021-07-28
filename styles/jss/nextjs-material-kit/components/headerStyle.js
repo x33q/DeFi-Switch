@@ -172,7 +172,7 @@ const headerStyle = {
     height: '30px',
     marginRight: '13px',
     color: '#fff',
-    backgroundColor: '#2101fc',
+    backgroundColor: '#8800fc',
     fontWeight: '700',
     fontSize: '12px',
   },
