@@ -47,7 +47,7 @@ export default function LandingPage(props) {
       />
       <Parallax responsive image="/img/bg7.jpg" className={classes.heroBG}>
 
-        <ReactPlayer width="120%" height="120%" className={classes.bgVideo} url='/img/Defi-BG-01.mp4' playing="true" loop="true" />
+        <ReactPlayer width="120%" height="120%" className={classes.bgVideo} url='/img/Defi-BG-01.mp4' playing="true" loop="true" muted="true" />
 
         <div className={classes.container}>
           <GridContainer spacing={0} className={classes.mainIntro}>
