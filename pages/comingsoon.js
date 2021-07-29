@@ -50,7 +50,7 @@ export default function LoginPage(props) {
           backgroundPosition: "top center",
         }}
       >
-        <ReactPlayer width="120%" height="120%" className={classes.bgVideo} url='/img/Defi-BG-02.mp4' playing="true" loop="true" muted="true" />
+        <ReactPlayer width="120%" height="120%" className={classes.bgVideo} url='/img/Defi-BG-02.mp4' playing="true" loop="true" muted="true" playbackRate="1" />
         <div className={classes.container}>
           <GridContainer spacing={2} justify="center">
             <GridItem xs={12} sm={12} md={6} className={classes.contentbodyleft}>

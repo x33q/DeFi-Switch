@@ -23,6 +23,7 @@ import styles from "styles/jss/nextjs-material-kit/pages/landingPage.js";
 // Sections for this page
 import ProductSection from "pages-sections/LandingPage-Sections/ProductSection.js";
 import WhatYouNeed from "pages-sections/LandingPage-Sections/WhatYouNeed.js";
+import AnimatedBG from "components/AnimatedBG/animatedBG.js";
 
 const dashboardRoutes = [];
 
@@ -47,7 +48,13 @@ export default function LandingPage(props) {
       />
       <Parallax responsive image="/img/bg7.jpg" className={classes.heroBG}>
 
-        <ReactPlayer width="120%" height="120%" className={classes.bgVideo} url='/img/Defi-BG-01.mp4' playing="true" loop="true" muted="true" />
+        <div className={classes.animWrapper}>
+          <AnimatedBG />
+        </div>
+
+        <div className={classes.playerWrapper}>
+          <ReactPlayer width="100%" height="100%" className={classes.bgVideo} url='/img/Defi-BG-01.mp4' playing="true" loop="true" muted="true" />
+        </div>
 
         <div className={classes.container}>
           <GridContainer spacing={0} className={classes.mainIntro}>

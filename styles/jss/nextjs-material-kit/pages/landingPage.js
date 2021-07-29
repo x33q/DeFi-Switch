@@ -45,13 +45,28 @@ const landingPageStyle = {
     position: 'relative',
     overflow: 'hidden',
   },
-  bgVideo: {
-    position: 'absolute',
+  playerWrapper: {
+    position: 'fixed',
+    minHeight: '100%',
+    top: '0px',
+    left: '0%',
+    zIndex: '2',
+  },
+  animWrapper: {
+    backgroundColor: '#0b043f',
+    position: 'fixed',
     height: '100%',
-    top: '0',
-    left: '-10%',
-    margin: '0px',
+    width: '100%',
+    top: '0px',
+    left: '0%',
+    zIndex: '1',
+  },
+  animatedSection: {
+    height: '1800px !important',
+  },
+  bgVideo: {
     opacity: '0.2',
+    mixBlendMode: 'difference',
   },
   gutterBtn: {
     marginRight: '20px',

@@ -42,6 +42,9 @@ export default function HeaderLinks(props) {
             <Link href="/comingsoon">
               <a className={classes.dropdownLink}>Coming Soon</a>
             </Link>,
+            <Link href="/dashboard">
+              <a className={classes.dropdownLink}>Dashboard</a>
+            </Link>,
             <Link href="/components">
               <a className={classes.dropdownLink}>Components</a>
             </Link>,
@@ -66,25 +69,15 @@ export default function HeaderLinks(props) {
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
-          href="/register"
-          className={classes.navLink}
-          color="transparent"
-        >
-          <PersonAddIcon className={classes.icons} />&nbsp;&nbsp;Register
-        </Button>
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <Button
           buttonIcon={Apps}
-          href="/dashboard"
+          href="/register"
           className={classes.registerNavLink}
           color="primary"
           round
         >
-          <Apps className={classes.icons} /> Dashboard
+          <PersonAddIcon className={classes.icons} /> Register
         </Button>
       </ListItem>
-
     </List>
   );
 }
