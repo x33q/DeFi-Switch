@@ -19,34 +19,37 @@ const productStyle = {
     marginBottom: '60px',
   },
   replaceTitle: {
-    color: '#FFF',
-    fontSize: '1.1em',
+    color: '#000',
+    fontSize: '1.5em',
     fontWeight: '700',
     marginBottom: '16px',
   },
   replaceDesc: {
-    color: '#FFF',
-    fontSize: '0.9em',
+    color: '#000',
+    fontSize: '18px',
     fontWeight: '300',
   },
   flag: {
     margin: '30px 0 28px 0',
   },
   whyItem1: {
-    backgroundColor: '#8800fc',
+    backgroundColor: '#fff',
     padding: '60px !important',
   },
   whyItem2: {
-    backgroundColor: '#4caf50',
+    backgroundColor: '#fff',
     padding: '60px !important',
   },
   whyItem3: {
-    backgroundColor: '#1c193a',
+    backgroundColor: '#fff',
     padding: '60px !important',
   },
   whyItem4: {
-    backgroundColor: '#f0f0f0',
+    backgroundColor: '#fff',
     padding: '60px !important',
+  },
+  topHeader: {
+    backgroundColor: '',
   },
 };
 

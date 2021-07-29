@@ -62,6 +62,14 @@ export default function LandingPage(props) {
               </h4>
               <br />
               <Button
+                className={classes.gutterBtn}
+                color="gray"
+                size="lg"
+                href="/register"
+              >
+                Documentation
+              </Button>
+              <Button
                 color="primary"
                 size="lg"
                 href="/register"

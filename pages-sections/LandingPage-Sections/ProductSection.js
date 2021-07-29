@@ -21,7 +21,7 @@ export default function ProductSection() {
   const classes = useStyles();
   return (
     <div className={classes.section}>
-      <GridContainer justify="center">
+      <GridContainer justify="center" className={classes.topHeader}>
         <GridItem xs={12} sm={12} md={8}>
           <h2 className={classes.title}>Why use DeFi Switch?</h2>
           <h5 className={classes.description}>
@@ -50,7 +50,7 @@ export default function ProductSection() {
               title="Zero Hassles"
               description="We take care of all the swapping, bridging, staking & harvesting so you can just do the investing."
               icon={VerifiedUser}
-              iconColor="#FFF"
+              iconColor="primary"
               vertical
             />
           </GridItem>
@@ -59,7 +59,7 @@ export default function ProductSection() {
               title="Zero Limits"
               description="No set term or investment premium, start with whatever is safe for you."
               icon={Fingerprint}
-              iconColor="#FFF"
+              iconColor="primary"
               vertical
             />
           </GridItem>
@@ -68,7 +68,7 @@ export default function ProductSection() {
               title="Zero Lockups"
               description="No lock up periods or complicated penalties, access your funds whenever you want."
               icon={Fingerprint}
-              iconColor="#FFF"
+              iconColor="primary"
               vertical
             />
           </GridItem>

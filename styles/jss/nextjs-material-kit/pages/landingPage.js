@@ -43,13 +43,18 @@ const landingPageStyle = {
     backgroundColor: '#0c1623',
     maxHeight: '100vh',
     position: 'relative',
+    overflow: 'hidden',
   },
   bgVideo: {
     position: 'absolute',
+    height: '100%',
     top: '0',
     left: '-10%',
     margin: '0px',
     opacity: '0.2',
+  },
+  gutterBtn: {
+    marginRight: '20px',
   },
 };
 

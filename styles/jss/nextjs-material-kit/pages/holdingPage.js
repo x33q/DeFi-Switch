@@ -18,6 +18,7 @@ const signupPageStyle = {
     height: "auto",
     display: "inherit",
     position: "relative",
+    overflow: 'hidden',
     margin: "0",
     padding: "0",
     border: "0",
@@ -112,6 +113,13 @@ const signupPageStyle = {
   },
   inputIconsColor: {
     color: "#495057",
+  },
+  bgVideo: {
+    position: 'absolute',
+    top: '0',
+    left: '-10%',
+    margin: '0px',
+    opacity: '0.2',
   },
 };
 

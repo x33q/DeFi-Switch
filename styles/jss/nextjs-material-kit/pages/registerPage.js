@@ -117,6 +117,14 @@ const signupPageStyle = {
     fontWeight: '400',
     fontSize: '1.3em',
   },
+  stepperStyling: {
+    width: '100%',
+    position: 'absolute',
+    left: '0',
+    bottom: '0 !important',
+    height: 'auto',
+    zIndex: '10',
+  },
 };
 
 export default signupPageStyle;

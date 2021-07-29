@@ -1,4 +1,7 @@
 import React from "react";
+
+import ReactPlayer from 'react-player'
+
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 import InputAdornment from "@material-ui/core/InputAdornment";
@@ -47,6 +50,7 @@ export default function LoginPage(props) {
           backgroundPosition: "top center",
         }}
       >
+        <ReactPlayer width="120%" height="120%" className={classes.bgVideo} url='/img/Defi-BG-02.mp4' playing="true" loop="true" />
         <div className={classes.container}>
           <GridContainer spacing={2} justify="center">
             <GridItem xs={12} sm={12} md={6} className={classes.contentbodyleft}>

@@ -21,8 +21,6 @@ const productStyle = {
     margin: '0 0 0 10px',
   },
   whyItem: {
-    border: '1px solid red',
-    borderRadius: '20px',
     padding: '40px !important',
   },
 };
