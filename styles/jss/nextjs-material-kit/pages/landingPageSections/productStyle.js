@@ -1,4 +1,4 @@
-import { title } from "styles/jss/nextjs-material-kit.js";
+import { title, roseColor } from "styles/jss/nextjs-material-kit.js";
 
 const productStyle = {
   section: {
@@ -55,7 +55,7 @@ const productStyle = {
     padding: '60px !important',
   },
   whyItem2: {
-    backgroundColor: '#8800fc',
+    backgroundColor: '#C4AC6B',
     padding: '60px !important',
   },
   whyItem3: {
@@ -63,7 +63,7 @@ const productStyle = {
     padding: '60px !important',
   },
   whyItem4: {
-    backgroundColor: '#459a59',
+    backgroundColor: roseColor,
     padding: '60px !important',
   },
   topHeader: {

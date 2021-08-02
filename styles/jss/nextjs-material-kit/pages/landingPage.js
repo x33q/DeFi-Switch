@@ -1,4 +1,4 @@
-import { container, title } from "styles/jss/nextjs-material-kit.js";
+import { container, title, primaryColor } from "styles/jss/nextjs-material-kit.js";
 
 const landingPageStyle = {
   container: {
@@ -64,11 +64,15 @@ const landingPageStyle = {
     zIndex: '1',
   },
   animatedSection: {
-    height: '1800px !important',
+    height: '1920px !important',
   },
   bgVideo: {
-    opacity: '0.2',
-    mixBlendMode: 'saturation',
+    opacity: '0.3',
+    mixBlendMode: 'multiply',
+    width: '100vw !important',
+    height: '100vh !important',
+    position: 'relative',
+    top: '-10px !important',
   },
   gutterBtn: {
     marginRight: '20px',
@@ -79,6 +83,9 @@ const landingPageStyle = {
     left: '50%',
     marginLeft: '-15px',
     bottom: '40px',
+  },
+  goldTxt: {
+    color: primaryColor,
   },
 };
 

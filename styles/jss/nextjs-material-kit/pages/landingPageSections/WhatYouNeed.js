@@ -9,7 +9,7 @@ const productStyle = {
   title: {
     ...title,
     marginBottom: "1rem",
-    marginTop: "30px",
+    marginTop: "0px",
     minHeight: "32px",
     textDecoration: "none",
     color: '#000',
@@ -25,6 +25,12 @@ const productStyle = {
   },
   whyItem: {
     padding: '40px !important',
+  },
+  borderBox: {
+    border: '1px solid rgba(104,108,122,0.2)',
+  },
+  sectionIntro: {
+    paddingRight: '130px !important',
   },
 };
 

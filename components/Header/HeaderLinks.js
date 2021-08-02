@@ -32,7 +32,7 @@ export default function HeaderLinks(props) {
         <CustomDropdown
           noLiPadding
           navDropdown
-          buttonText="&nbsp;About"
+          buttonText="&nbsp;Pages&nbsp;&nbsp;&nbsp;&nbsp;"
           buttonProps={{
             className: classes.navLink,
             color: "transparent",
@@ -72,7 +72,7 @@ export default function HeaderLinks(props) {
           buttonIcon={Apps}
           href="/register"
           className={classes.registerNavLink}
-          color="primary"
+          color="rose"
           round
         >
           <PersonAddIcon className={classes.icons} /> Register

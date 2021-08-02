@@ -173,10 +173,15 @@ const headerStyle = {
     width: '30px',
     height: '30px',
     marginRight: '13px',
-    color: '#fff',
-    backgroundColor: '#8800fc',
+    color: '#111',
+    backgroundColor: primaryColor,
     fontWeight: '700',
     fontSize: '12px',
+  },
+  brandLogo: {
+    width: '120px',
+    height: 'auto',
+    cursor: 'pointer',
   },
 };
 

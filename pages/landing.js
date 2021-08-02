@@ -56,13 +56,13 @@ export default function LandingPage(props) {
         </div>
 
         <div className={classes.playerWrapper}>
-          <ReactPlayer width="100%" height="100%" className={classes.bgVideo} url='/img/Defi-BG-01.mp4' playing="true" loop="true" muted="true" />
+          <ReactPlayer width="100%" height="100%" className={classes.bgVideo} url='/img/bg4.mp4' playing="true" loop="true" muted="true" />
         </div>
 
         <div className={classes.container}>
           <GridContainer spacing={0} className={classes.mainIntro}>
             <GridItem sm={12}>
-              <h1 className={classes.title}>Simple Rand Investing into Complex Decentralised Finance.</h1>
+              <h1 className={classes.title}>Simple <span className={classes.goldTxt}>Rand Investing</span> into Complex Decentralised Finance.</h1>
               <h4 className={classes.desc}>
                 Put your ZAR to work in the world of DeFi easily, no complicated wallets or risky transactions &amp; up to 10% APR with zero deposit fees.
                 <br /><br />
@@ -76,13 +76,15 @@ export default function LandingPage(props) {
                 color="gray"
                 size="lg"
                 href="/register"
+                round
               >
                 Documentation
               </Button>
               <Button
-                color="primary"
+                color="rose"
                 size="lg"
                 href="/register"
+                round
               >
                 Register
               </Button>

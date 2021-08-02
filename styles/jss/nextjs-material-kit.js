@@ -90,12 +90,12 @@ const defaultFont = {
   lineHeight: "1.5em",
 };
 
-const primaryColor = "#8800fc";
+const primaryColor = "#C4AC6B";
 const warningColor = "#ff9800";
-const dangerColor = "#f44336";
+const dangerColor = "#b9214c";
 const successColor = "#4caf50";
 const infoColor = "#00acc1";
-const roseColor = "#e91e63";
+const roseColor = "#21b997";
 const grayColor = "#605c6c";
 
 const primaryBoxShadow = {
@@ -145,7 +145,7 @@ const dangerBoxShadow = {
 };
 const roseBoxShadow = {
   boxShadow: `0 4px 20px 0px ${hexToRGBAlpha(
-    "#000",
+    "#21b997",
     0.14
   )}, 0 7px 10px -5px ${hexToRGBAlpha(roseColor, 0.4)}`,
 };

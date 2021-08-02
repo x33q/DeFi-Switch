@@ -25,7 +25,7 @@ export default function ProductSection() {
       <div>
         <GridContainer spacing={4}>
           <GridContainer lg={4} md={12} spacing={4}>
-            <GridItem xs={12}>
+            <GridItem className={classes.sectionIntro} xs={12}>
               <h2 className={classes.title}>What you’ll need</h2>
               <h5 className={classes.description}>
               This is the paragraph where you can write more details about your
@@ -33,12 +33,12 @@ export default function ProductSection() {
               This is the paragraph where you can write more details about your
               product. Keep you user engaged by providing meaningful information<br />
               </h5>
-              <Button href="/register" size="lg" color="success" fullWidth round>
+              <Button href="/register" size="lg" color="rose" fullWidth round>
                 Get started <ArrowForwardIcon className={classes.icons} />
               </Button>
             </GridItem>
           </GridContainer>
-          <GridContainer lg={8} md={12} spacing={1}>
+          <GridContainer className={classes.borderBox} lg={8} md={12} spacing={1}>
             <GridItem className={classes.whyItem} xs={12} sm={12} md={6}>
               <InfoArea
                 title="Registration Form"
