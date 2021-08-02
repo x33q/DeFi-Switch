@@ -68,7 +68,7 @@ export default function RegisterPage(props) {
                       <CardHeader color="primary" className={classes.cardHeader}>
                         <h4 className={classes.formTitle}>Register</h4>
                         <p className={classes.formSubtitle}>Get Started and invest in DeFi in under 7 minutes.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                        <p>We safely handle all the complicated transactions so that you don't have to. If you want to try DeFi directly yourself with your existing crypto assets, we suggest you check out yearn.fi'.</p>
                       </CardHeader>
                     </GridItem>
                     <GridItem sm={12} md={7} lg={7}>
