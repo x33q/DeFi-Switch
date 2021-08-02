@@ -183,7 +183,7 @@ export default function RegisterPage(props) {
                       <CardFooter className={classes.cardFooter}>
                         <Button
                         href="/register2"
-                        fullWidth color="success"
+                        fullWidth color="rose"
                         size="lg">
                           Get started
                         </Button>

@@ -21,6 +21,7 @@ import CardBody from "components/Card/CardBody.js";
 import CardHeader from "components/Card/CardHeader.js";
 import CardFooter from "components/Card/CardFooter.js";
 import CustomInput from "components/CustomInput/CustomInput.js";
+import Avatar from '@material-ui/core/Avatar';
 
 import styles from "styles/jss/nextjs-material-kit/pages/holdingPage.js";
 
@@ -50,10 +51,11 @@ export default function LoginPage(props) {
           backgroundPosition: "top center",
         }}
       >
-        <ReactPlayer width="120%" height="120%" className={classes.bgVideo} url='/img/Defi-BG-02.mp4' playing="true" loop="true" muted="true" playbackRate="1" />
+        <ReactPlayer width="120%" height="120%" className={classes.bgVideo} url='/img/bg4.mp4' playing="true" loop="true" muted="true" playbackRate="1" />
         <div className={classes.container}>
           <GridContainer spacing={2} justify="center">
             <GridItem xs={12} sm={12} md={6} className={classes.contentbodyleft}>
+              <Avatar className={classes.avatarLogo}>DS</Avatar>
               <h1 className={classes.logo}>DeFi Switch</h1>
               <h1 className={classes.title}>Simple Rand Investing into Complex Decentralised Finance.</h1>
               <h4 className={classes.desc}>
@@ -104,7 +106,7 @@ export default function LoginPage(props) {
                     />
                   </CardBody>
                   <CardFooter className={classes.cardFooter}>
-                    <Button fullWidth color="success" size="lg">
+                    <Button fullWidth color="rose" size="lg">
                       Submit
                     </Button>
                   </CardFooter>

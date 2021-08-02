@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'none',
   },
   uploadBtn: {
-    backgroundColor: '#2101fc',
+    backgroundColor: '#605c6c',
     color: '#FFF',
   },
 }));

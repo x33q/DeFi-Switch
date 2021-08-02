@@ -1,4 +1,4 @@
-import { container } from "styles/jss/nextjs-material-kit.js";
+import { container, primaryColor } from "styles/jss/nextjs-material-kit.js";
 
 const signupPageStyle = {
   container: {
@@ -73,6 +73,9 @@ const signupPageStyle = {
     backgroundColor: "rgba(255,255,255,0.1)",
     position: "fixed",
     color: "#FFF",
+    '&:hover': {
+      color: primaryColor,
+    },
     fontSize: "0.8em",
     top: "20px",
     left: "20px",
@@ -91,6 +94,7 @@ const signupPageStyle = {
     fontWeight: "800",
     fontSize: "1.5em",
     marginBottom: "30px",
+    color: primaryColor,
   },
   title: {
     fontWeight: "800",
@@ -120,6 +124,17 @@ const signupPageStyle = {
     left: '-10%',
     margin: '0px',
     opacity: '0.2',
+  },
+  avatarLogo: {
+    backgroundColor: '#C4AC6B',
+    color: '#111',
+    height: '32px',
+    width: '32px',
+    marginRight: '13px',
+    marginLeft: '-5px',
+    fontSize: '11px',
+    fontWeight: '700',
+    display: 'none',
   },
 };
 

@@ -22,12 +22,12 @@ const QontoConnector = withStyles({
   },
   active: {
     '& $line': {
-      borderColor: '#2101fc',
+      borderColor: '#C4AC6B',
     },
   },
   completed: {
     '& $line': {
-      borderColor: '#1ec766',
+      borderColor: '#C4AC6B',
     },
   },
   line: {
@@ -45,7 +45,7 @@ const useQontoStepIconStyles = makeStyles({
     alignItems: 'center',
   },
   active: {
-    color: '#2202fc',
+    color: '#C4AC6B',
   },
   circle: {
     width: 8,
