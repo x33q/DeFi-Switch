@@ -17,7 +17,7 @@ const landingPageStyle = {
     fontSize: '4.2em',
   },
   desc: {
-    fontSize: "1rem",
+    fontSize: "1.1rem",
   },
   subtitle: {
     fontSize: "1.2rem",
@@ -86,6 +86,10 @@ const landingPageStyle = {
   },
   goldTxt: {
     color: primaryColor,
+  },
+  biggerTxt: {
+    fontSize: '150%',
+    lineHeight: '1.4em',
   },
 };
 
