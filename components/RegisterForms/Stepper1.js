@@ -31,7 +31,7 @@ const QontoConnector = withStyles({
     },
   },
   line: {
-    borderColor: 'rgba(255,255,255,0.1)',
+    borderColor: 'rgba(0,0,0,0.1)',
     borderTopWidth: 3,
     borderRadius: 1,
   },
@@ -39,7 +39,7 @@ const QontoConnector = withStyles({
 
 const useQontoStepIconStyles = makeStyles({
   root: {
-    color: 'rgba(255,255,255,0.4)',
+    color: 'rgba(0,0,0,0.4)',
     display: 'flex',
     height: 22,
     alignItems: 'center',
@@ -187,7 +187,7 @@ const useStyles = makeStyles((theme) => ({
     color: '#FFF',
   },
   StepperBG: {
-    backgroundColor: '#000',
+    backgroundColor: '#FFF',
     color: '#FFF',
     borderTop: '1px solid rgba(255,255,255,0.1)',
   },

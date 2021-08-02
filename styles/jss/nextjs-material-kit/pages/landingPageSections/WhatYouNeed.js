@@ -2,8 +2,9 @@ import { title } from "styles/jss/nextjs-material-kit.js";
 
 const productStyle = {
   section: {
-    padding: "50px 0 70px 0",
+    padding: "100px 0 120px 0",
     textAlign: "center",
+    borderTop: '1px solid rgba(0,0,0,0.1)',
   },
   title: {
     ...title,
@@ -12,10 +13,12 @@ const productStyle = {
     minHeight: "32px",
     textDecoration: "none",
     color: '#000',
+    textAlign: 'left',
   },
   description: {
     color: "#666",
     marginBottom: '60px',
+    textAlign: 'left',
   },
   icons: {
     margin: '0 0 0 10px',

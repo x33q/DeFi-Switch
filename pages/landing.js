@@ -25,6 +25,9 @@ import ProductSection from "pages-sections/LandingPage-Sections/ProductSection.j
 import WhatYouNeed from "pages-sections/LandingPage-Sections/WhatYouNeed.js";
 import AnimatedBG from "components/AnimatedBG/animatedBG.js";
 
+import Lottie from "lottie-react";
+import scrollAnim from "../public/lottiefiles/scrolldown.json";
+
 const dashboardRoutes = [];
 
 const useStyles = makeStyles(styles);
@@ -85,6 +88,7 @@ export default function LandingPage(props) {
               </Button>
             </GridItem>
           </GridContainer>
+          <Lottie className={classes.scrollAnim} animationData={scrollAnim} />
         </div>
       </Parallax>
       <div className={classNames(classes.main, classes.mainRaised)}>

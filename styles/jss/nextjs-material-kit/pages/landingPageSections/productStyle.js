@@ -2,21 +2,27 @@ import { title } from "styles/jss/nextjs-material-kit.js";
 
 const productStyle = {
   section: {
-    padding: "40px 0",
+    padding: "140px 0",
     textAlign: "center",
-    borderBottom: '1px solid rgba(0,0,0,0.1)',
+    // width: '100vw',
+    // position: 'absolute',
+    // left: '0px',
   },
   title: {
     ...title,
     marginBottom: "1rem",
     marginTop: "30px",
+    marginRight: '180px',
     minHeight: "32px",
     textDecoration: "none",
     color: '#000',
+    textAlign: 'left',
   },
   description: {
     color: "#666",
     marginBottom: '60px',
+    marginRight: '80px',
+    textAlign: 'left',
   },
   replaceTitle: {
     color: '#000',
@@ -29,23 +35,35 @@ const productStyle = {
     fontSize: '18px',
     fontWeight: '300',
   },
+  whiteTitle: {
+    color: '#FFF',
+    fontSize: '1.5em',
+    fontWeight: '700',
+    marginBottom: '16px',
+    marginTop: '0',
+  },
+  whiteDesc: {
+    color: '#FFF',
+    fontSize: '18px',
+    fontWeight: '300',
+  },
   flag: {
     margin: '30px 0 28px 0',
   },
   whyItem1: {
-    backgroundColor: '#fff',
+    backgroundColor: '#f1f1f1',
     padding: '60px !important',
   },
   whyItem2: {
-    backgroundColor: '#fff',
+    backgroundColor: '#8800fc',
     padding: '60px !important',
   },
   whyItem3: {
-    backgroundColor: '#fff',
+    backgroundColor: '#605c6c',
     padding: '60px !important',
   },
   whyItem4: {
-    backgroundColor: '#fff',
+    backgroundColor: '#459a59',
     padding: '60px !important',
   },
   topHeader: {

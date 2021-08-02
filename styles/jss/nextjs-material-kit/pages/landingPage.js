@@ -25,23 +25,25 @@ const landingPageStyle = {
     margin: "10px auto 0",
   },
   main: {
-    background: "#FFFFFF",
+    background: "#FFF",
     position: "relative",
     zIndex: "3",
   },
   mainRaised: {
-    margin: "-60px auto 0px",
-    maxWidth: "1400px",
-    borderRadius: "6px",
-    boxShadow:
-      "0 16px 24px 2px rgba(0, 0, 0, 0.03), 0 6px 30px 5px rgba(0, 0, 0, 0.03), 0 8px 10px -5px rgba(0, 0, 0, 0.03)",
+    margin: "0px auto 0px",
+    maxWidth: "100%",
+    borderRadius: "0px",
+    // boxShadow:
+    //   "0 16px 24px 2px rgba(0, 0, 0, 0.03), 0 6px 30px 5px rgba(0, 0, 0, 0.03), 0 8px 10px -5px rgba(0, 0, 0, 0.03)",
   },
   mainIntro: {
     textAlign: 'center',
+    maxWidth: '880px',
+    margin: 'auto',
   },
   heroBG: {
     backgroundColor: '#0c1623',
-    maxHeight: '100vh',
+    height: '100vh',
     position: 'relative',
     overflow: 'hidden',
   },
@@ -66,10 +68,17 @@ const landingPageStyle = {
   },
   bgVideo: {
     opacity: '0.2',
-    mixBlendMode: 'difference',
+    mixBlendMode: 'saturation',
   },
   gutterBtn: {
     marginRight: '20px',
+  },
+  scrollAnim: {
+    width: '30px',
+    position: 'absolute',
+    left: '50%',
+    marginLeft: '-15px',
+    bottom: '40px',
   },
 };
 
