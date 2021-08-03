@@ -1,4 +1,4 @@
-import { container } from "styles/jss/nextjs-material-kit.js";
+import { container, primaryColor } from "styles/jss/nextjs-material-kit.js";
 
 const signupPageStyle = {
   container: {
@@ -116,6 +116,14 @@ const signupPageStyle = {
     margin: '0px 0px 10px 0px',
     fontWeight: '400',
     fontSize: '1.3em',
+  },
+  stepperStyling: {
+    width: '100%',
+    position: 'absolute',
+    left: '0',
+    bottom: '0 !important',
+    height: 'auto',
+    zIndex: '10',
   },
 };
 

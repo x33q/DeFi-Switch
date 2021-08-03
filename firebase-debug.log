@@ -1,0 +1,60 @@
+[debug] [2021-08-02T18:28:38.356Z] ----------------------------------------------------------------------
+[debug] [2021-08-02T18:28:38.357Z] Command:       /usr/local/bin/node /usr/local/bin/firebase emulators:start
+[debug] [2021-08-02T18:28:38.358Z] CLI Version:   9.16.0
+[debug] [2021-08-02T18:28:38.358Z] Platform:      darwin
+[debug] [2021-08-02T18:28:38.358Z] Node Version:  v14.16.1
+[debug] [2021-08-02T18:28:38.359Z] Time:          Mon Aug 02 2021 20:28:38 GMT+0200 (South Africa Standard Time)
+[debug] [2021-08-02T18:28:38.359Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-08-02T18:28:38.398Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"rules"}
+[debug] [2021-08-02T18:28:38.401Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-08-02T18:28:38.401Z] > authorizing via signed-in user (emile@makebetter.co.za)
+[info] i  emulators: Starting emulators: database {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: database"}}
+[debug] [2021-08-02T18:28:38.419Z] [hub] writing locator at /var/folders/k8/71rdw99x6436l8dbxynp2y4w0000gn/T/hub-defi-switch.json
+[debug] [2021-08-02T18:28:38.428Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/defi-switch [none]
+[debug] [2021-08-02T18:28:39.128Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/defi-switch 200
+[debug] [2021-08-02T18:28:39.128Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/defi-switch {"projectId":"defi-switch","projectNumber":"247993404241","displayName":"DeFi Switch","name":"projects/defi-switch","resources":{"hostingSite":"defi-switch","realtimeDatabaseInstance":"defi-switch-default-rtdb"},"state":"ACTIVE"}
+[info] i  emulators: Shutting down emulators. {"metadata":{"emulator":{"name":"hub"},"message":"Shutting down emulators."}}
+[info] i  hub: Stopping emulator hub {"metadata":{"emulator":{"name":"hub"},"message":"Stopping emulator hub"}}
+[debug] [2021-08-02T18:28:39.132Z] TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received an instance of Object
+    at validateString (internal/validators.js:124:11)
+    at Object.join (path.js:1039:7)
+    at Config.path (/usr/local/lib/node_modules/firebase-tools/lib/config.js:115:45)
+    at /usr/local/lib/node_modules/firebase-tools/lib/database/rulesConfig.js:12:27
+    at Array.map (<anonymous>)
+    at Object.normalizeRulesConfig (/usr/local/lib/node_modules/firebase-tools/lib/database/rulesConfig.js:9:24)
+    at Object.startAll (/usr/local/lib/node_modules/firebase-tools/lib/emulator/controller.js:330:34)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Command.actionFn (/usr/local/lib/node_modules/firebase-tools/lib/commands/emulators-start.js:26:9)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2021-08-02T18:28:53.544Z] ----------------------------------------------------------------------
+[debug] [2021-08-02T18:28:53.546Z] Command:       /usr/local/bin/node /usr/local/bin/firebase emulators:start
+[debug] [2021-08-02T18:28:53.546Z] CLI Version:   9.16.0
+[debug] [2021-08-02T18:28:53.546Z] Platform:      darwin
+[debug] [2021-08-02T18:28:53.546Z] Node Version:  v14.16.1
+[debug] [2021-08-02T18:28:53.547Z] Time:          Mon Aug 02 2021 20:28:53 GMT+0200 (South Africa Standard Time)
+[debug] [2021-08-02T18:28:53.547Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-08-02T18:28:53.583Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"rules"}
+[debug] [2021-08-02T18:28:53.585Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-08-02T18:28:53.585Z] > authorizing via signed-in user (emile@makebetter.co.za)
+[info] i  emulators: Starting emulators: database {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: database"}}
+[debug] [2021-08-02T18:28:53.600Z] [hub] writing locator at /var/folders/k8/71rdw99x6436l8dbxynp2y4w0000gn/T/hub-defi-switch.json
+[debug] [2021-08-02T18:28:53.608Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/defi-switch [none]
+[debug] [2021-08-02T18:28:54.383Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/defi-switch 200
+[debug] [2021-08-02T18:28:54.383Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/defi-switch {"projectId":"defi-switch","projectNumber":"247993404241","displayName":"DeFi Switch","name":"projects/defi-switch","resources":{"hostingSite":"defi-switch","realtimeDatabaseInstance":"defi-switch-default-rtdb"},"state":"ACTIVE"}
+[info] i  emulators: Shutting down emulators. {"metadata":{"emulator":{"name":"hub"},"message":"Shutting down emulators."}}
+[info] i  hub: Stopping emulator hub {"metadata":{"emulator":{"name":"hub"},"message":"Stopping emulator hub"}}
+[debug] [2021-08-02T18:28:54.386Z] TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received an instance of Object
+    at validateString (internal/validators.js:124:11)
+    at Object.join (path.js:1039:7)
+    at Config.path (/usr/local/lib/node_modules/firebase-tools/lib/config.js:115:45)
+    at /usr/local/lib/node_modules/firebase-tools/lib/database/rulesConfig.js:12:27
+    at Array.map (<anonymous>)
+    at Object.normalizeRulesConfig (/usr/local/lib/node_modules/firebase-tools/lib/database/rulesConfig.js:9:24)
+    at Object.startAll (/usr/local/lib/node_modules/firebase-tools/lib/emulator/controller.js:330:34)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Command.actionFn (/usr/local/lib/node_modules/firebase-tools/lib/commands/emulators-start.js:26:9)
+[error] 
+[error] Error: An unexpected error has occurred.

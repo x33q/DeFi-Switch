@@ -154,8 +154,8 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: '7px',
   },
   avatarLogo: {
-    backgroundColor: '#2101fc',
-    color: '#FFF',
+    backgroundColor: '#C4AC6B',
+    color: '#111',
     height: '32px',
     width: '32px',
     marginRight: '13px',
@@ -224,9 +224,9 @@ export default function ClippedDrawer() {
         <Toolbar />
         <div className={classes.drawerContainer}>
           <List>
-            {['Dashboard'].map((text, index) => (
+            {['Dashboard','Deposit','Withdraw'].map((text, index) => (
               <ListItem button key={text}>
-                <ListItemIcon>{index % 2 === 0 ? <DashboardIcon className={classes.menuIcon} color="info" /> : <AccountCircleIcon className={classes.menuIcon} color="info" />}</ListItemIcon>
+                <ListItemIcon>{index % 3 === 0 ? <DashboardIcon className={classes.menuIcon} color="info" /> : <AccountCircleIcon className={classes.menuIcon} color="info" />}</ListItemIcon>
                 <ListItemText classes={{primary:classes.listItemText}} primary={text} />
               </ListItem>
             ))}
@@ -235,7 +235,7 @@ export default function ClippedDrawer() {
           <List>
             {['Settings'].map((text, index) => (
               <ListItem button key={text}>
-                <ListItemIcon>{index % 2 === 0 ? <FingerprintIcon className={classes.menuIcon} color="error" /> : <MailIcon />}</ListItemIcon>
+                <ListItemIcon>{index % 2 === 0 ? <FingerprintIcon className={classes.menuIcon} color="primary" /> : <MailIcon />}</ListItemIcon>
                 <ListItemText classes={{primary:classes.listItemText}} primary={text} />
               </ListItem>
             ))}

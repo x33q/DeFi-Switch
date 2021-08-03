@@ -183,7 +183,7 @@ export default function RegisterPage(props) {
                       <CardFooter className={classes.cardFooter}>
                         <Button
                         href="/register2"
-                        fullWidth color="success"
+                        fullWidth color="rose"
                         size="lg">
                           Get started
                         </Button>
@@ -193,11 +193,9 @@ export default function RegisterPage(props) {
                 </form>
               </Card>
             </GridItem>
-            <GridItem sm={8}>
-              <Stepper1 />
-            </GridItem>
           </GridContainer>
         </div>
+        <div className={classes.stepperStyling}><Stepper1 /></div>
         <Footer whiteFont />
       </div>
     </div>

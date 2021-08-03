@@ -1,4 +1,4 @@
-import { container } from "styles/jss/nextjs-material-kit.js";
+import { container, primaryColor } from "styles/jss/nextjs-material-kit.js";
 
 const signupPageStyle = {
   container: {
@@ -128,6 +128,7 @@ const signupPageStyle = {
   iconHolder: {
     height: '80px',
     width: '60px',
+    color: primaryColor,
   },
   uploadTitle: {
     color: '#000',

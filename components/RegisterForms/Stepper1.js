@@ -22,12 +22,12 @@ const QontoConnector = withStyles({
   },
   active: {
     '& $line': {
-      borderColor: '#2101fc',
+      borderColor: '#C4AC6B',
     },
   },
   completed: {
     '& $line': {
-      borderColor: '#1ec766',
+      borderColor: '#C4AC6B',
     },
   },
   line: {
@@ -45,7 +45,7 @@ const useQontoStepIconStyles = makeStyles({
     alignItems: 'center',
   },
   active: {
-    color: '#2202fc',
+    color: '#C4AC6B',
   },
   circle: {
     width: 8,
@@ -95,6 +95,7 @@ const ColorlibConnector = withStyles({
     '& $line': {
       backgroundImage:
         'linear-gradient( 95deg,rgb(242,113,33) 0%,rgb(233,64,87) 50%,rgb(138,35,135) 100%)',
+        color: '#FFF',
     },
   },
   completed: {
@@ -178,17 +179,21 @@ const useStyles = makeStyles((theme) => ({
   },
   button: {
     marginRight: theme.spacing(1),
+    color: '#FFF',
   },
   instructions: {
     marginTop: theme.spacing(1),
     marginBottom: theme.spacing(1),
+    color: '#FFF',
   },
   StepperBG: {
-    backgroundColor: '#fff',
-    borderRadius: '8px',
+    backgroundColor: '#FFF',
+    color: '#FFF',
+    borderTop: '1px solid rgba(255,255,255,0.1)',
   },
   label: {
     backgroundColor: '#FF0000 !important',
+    color: '#FFF',
   },
 }));
 

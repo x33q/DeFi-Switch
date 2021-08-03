@@ -1,36 +1,87 @@
-import { title } from "styles/jss/nextjs-material-kit.js";
+import { title, roseColor } from "styles/jss/nextjs-material-kit.js";
 
 const productStyle = {
   section: {
-    padding: "70px 0",
+    padding: "140px 0",
     textAlign: "center",
-    borderBottom: '1px solid rgba(0,0,0,0.1)',
+    // width: '100vw',
+    // position: 'absolute',
+    // left: '0px',
   },
   title: {
     ...title,
     marginBottom: "1rem",
     marginTop: "30px",
+    marginRight: '180px',
     minHeight: "32px",
     textDecoration: "none",
     color: '#000',
+    textAlign: 'left',
   },
   description: {
     color: "#666",
-    marginBottom: '30px',
+    marginBottom: '60px',
+    marginRight: '80px',
+    textAlign: 'left',
   },
   replaceTitle: {
-    color: '#3c4859',
-    fontSize: '1.1em',
+    color: '#000',
+    fontSize: '1.5em',
     fontWeight: '700',
     marginBottom: '16px',
   },
   replaceDesc: {
-    color: '#333',
-    fontSize: '0.9em',
+    color: '#000',
+    fontSize: '18px',
+    fontWeight: '300',
+  },
+  whiteTitle: {
+    color: '#FFF',
+    fontSize: '1.5em',
+    fontWeight: '700',
+    marginBottom: '16px',
+    marginTop: '0',
+  },
+  whiteDesc: {
+    color: '#FFF',
+    fontSize: '18px',
     fontWeight: '300',
   },
   flag: {
     margin: '30px 0 28px 0',
+  },
+  whyItem1: {
+    backgroundColor: '#f1f1f1',
+    padding: '60px !important',
+    border: '15px solid #FFF',
+    borderRadius: '25px',
+  },
+  whyItem2: {
+    backgroundColor: '#C4AC6B',
+    padding: '60px !important',
+    border: '15px solid #FFF',
+    borderRadius: '25px',
+  },
+  whyItem3: {
+    backgroundColor: '#605c6c',
+    padding: '60px !important',
+    border: '15px solid #FFF',
+    borderRadius: '25px',
+  },
+  whyItem4: {
+    backgroundColor: roseColor,
+    padding: '60px !important',
+    border: '15px solid #FFF',
+    borderRadius: '25px',
+  },
+  topHeader: {
+    backgroundColor: '',
+  },
+  scrollAnims: {
+    width: '100%',
+    height: '110px',
+    margin: '0 auto',
+    marginBottom: '10px',
   },
 };
 

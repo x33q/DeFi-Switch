@@ -163,18 +163,24 @@ const headerStyle = {
   },
   ZALogo: {
     maxHeight: '14px',
-    position: 'absolute',
+    position: 'fixed',
     top: '18px',
-    left: '70px',
+    left: '0px',
+    zIndex: '9999',
   },
   avatar: {
     width: '30px',
     height: '30px',
     marginRight: '13px',
-    color: '#fff',
-    backgroundColor: '#2101fc',
+    color: '#111',
+    backgroundColor: primaryColor,
     fontWeight: '700',
     fontSize: '12px',
+  },
+  brandLogo: {
+    width: '120px',
+    height: 'auto',
+    cursor: 'pointer',
   },
 };
 

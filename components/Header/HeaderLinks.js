@@ -32,7 +32,7 @@ export default function HeaderLinks(props) {
         <CustomDropdown
           noLiPadding
           navDropdown
-          buttonText="&nbsp;About"
+          buttonText="&nbsp;Pages&nbsp;&nbsp;&nbsp;&nbsp;"
           buttonProps={{
             className: classes.navLink,
             color: "transparent",
@@ -41,6 +41,9 @@ export default function HeaderLinks(props) {
           dropdownList={[
             <Link href="/comingsoon">
               <a className={classes.dropdownLink}>Coming Soon</a>
+            </Link>,
+            <Link href="/dashboard">
+              <a className={classes.dropdownLink}>Dashboard</a>
             </Link>,
             <Link href="/components">
               <a className={classes.dropdownLink}>Components</a>
@@ -66,25 +69,15 @@ export default function HeaderLinks(props) {
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
-          href="/register"
-          className={classes.navLink}
-          color="transparent"
-        >
-          <PersonAddIcon className={classes.icons} />&nbsp;&nbsp;Register
-        </Button>
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <Button
           buttonIcon={Apps}
-          href="/dashboard"
+          href="/register"
           className={classes.registerNavLink}
-          color="primary"
+          color="rose"
           round
         >
-          <Apps className={classes.icons} /> Dashboard
+          <PersonAddIcon className={classes.icons} /> Register
         </Button>
       </ListItem>
-
     </List>
   );
 }

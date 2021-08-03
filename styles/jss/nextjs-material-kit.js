@@ -64,7 +64,7 @@ const container = {
     maxWidth: "960px",
   },
   "@media (min-width: 1200px)": {
-    maxWidth: "1140px",
+    maxWidth: "1320px",
   },
 };
 
@@ -90,13 +90,13 @@ const defaultFont = {
   lineHeight: "1.5em",
 };
 
-const primaryColor = "#2200fc";
+const primaryColor = "#C4AC6B";
 const warningColor = "#ff9800";
-const dangerColor = "#f44336";
+const dangerColor = "#b9214c";
 const successColor = "#4caf50";
 const infoColor = "#00acc1";
-const roseColor = "#e91e63";
-const grayColor = "#333";
+const roseColor = "#21b997";
+const grayColor = "#605c6c";
 
 const primaryBoxShadow = {
   boxShadow: `0 12px 20px -10px ${hexToRGBAlpha(
@@ -144,10 +144,13 @@ const dangerBoxShadow = {
   )}`,
 };
 const roseBoxShadow = {
-  boxShadow: `0 4px 20px 0px ${hexToRGBAlpha(
-    "#000",
-    0.14
-  )}, 0 7px 10px -5px ${hexToRGBAlpha(roseColor, 0.4)}`,
+  boxShadow: `0 12px 20px -10px ${hexToRGBAlpha(
+    roseColor,
+    0.28
+  )}, 0 4px 20px 0px rgba(0, 0, 0, 0.12), 0 7px 8px -5px ${hexToRGBAlpha(
+    roseColor,
+    0.2
+  )}`,
 };
 
 const warningCardHeader = {
@@ -172,7 +175,7 @@ const infoCardHeader = {
 };
 const primaryCardHeader = {
   color: "#fff",
-  background: "linear-gradient(60deg, #0047fc, #2200fc)",
+  background: "linear-gradient(60deg, #C4AC6B, #ac9555)",
   ...primaryBoxShadow,
 };
 const roseCardHeader = {
@@ -208,6 +211,7 @@ const title = {
   margin: "1.75rem 0 0.875rem",
   textDecoration: "none",
   fontWeight: "700",
+  fontFamily: '"DM Sans", sans-serif',
   // fontFamily: `"Roboto Slab", "Times New Roman", serif`,
 };
 
