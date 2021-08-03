@@ -1,4 +1,4 @@
-import { container, title, primaryColor } from "styles/jss/nextjs-material-kit.js";
+import { container, title, primaryColor, grayColor } from "styles/jss/nextjs-material-kit.js";
 
 const landingPageStyle = {
   container: {
@@ -38,7 +38,7 @@ const landingPageStyle = {
   },
   mainIntro: {
     textAlign: 'center',
-    maxWidth: '880px',
+    maxWidth: '1000px',
     margin: 'auto',
   },
   heroBG: {
@@ -87,9 +87,40 @@ const landingPageStyle = {
   goldTxt: {
     color: primaryColor,
   },
+  greenTxt: {
+    color: '#FFF',
+  },
   biggerTxt: {
     fontSize: '150%',
     lineHeight: '1.4em',
+  },
+  card: {
+    background: 'rgba(0,0,0,0) !important',
+    color: 'red !important',
+  },
+  xxx: {
+    position: "relative",
+    transition: "all 300ms ease-out",
+    background: 'none !important',
+  },
+  xxxHidden: {
+    opacity: "0",
+    background: 'rgba(0,0,0,0) !important',
+    transform: "translate3d(0, -60px, 0)",
+    transition: "all 1300ms ease-out",
+    color: 'white !important',
+    boxShadow: 'none !important',
+  },
+  '@media (max-width: 1024px)': {
+    title: {
+      fontSize: '2.2em',
+    },
+    desc: {
+      fontSize: "90%",
+    },
+    bgVideo: {
+      display: 'none',
+    },
   },
 };
 

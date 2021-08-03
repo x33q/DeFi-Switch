@@ -18,6 +18,9 @@ import Button from "components/CustomButtons/Button.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
 import Parallax from "components/Parallax/Parallax.js";
 
+import PersonAddIcon from '@material-ui/icons/PersonAdd';
+import Card from "components/Card/Card.js";
+
 import styles from "styles/jss/nextjs-material-kit/pages/landingPage.js";
 
 // Sections for this page
@@ -27,12 +30,17 @@ import AnimatedBG from "components/AnimatedBG/animatedBG.js";
 
 import Lottie from "lottie-react";
 import scrollAnim from "../public/lottiefiles/scrolldown.json";
+import noHassles from "../public/lottiefiles/noHassles.json";
 
 const dashboardRoutes = [];
 
 const useStyles = makeStyles(styles);
 
 export default function LandingPage(props) {
+  const [cardAnimaton, setCardAnimation] = React.useState("xxxHidden");
+  setTimeout(function () {
+    setCardAnimation("");
+  }, 700);
   const classes = useStyles();
   const { ...rest } = props;
   return (
@@ -60,36 +68,40 @@ export default function LandingPage(props) {
         </div>
 
         <div className={classes.container}>
-          <GridContainer spacing={0} className={classes.mainIntro}>
-            <GridItem sm={12}>
-              <h1 className={classes.title}>Simple <span className={classes.goldTxt}>Rand Investing</span> into Complex Decentralised Finance.</h1>
-              <h4 className={classes.desc}>
-                <span className={classes.biggerTxt}>Put your ZAR to work in the world of DeFi easily, no complicated wallets or risky transactions &amp; up to 10% APR with zero deposit fees.</span>
-                <br /><br />
-                It’s as simple as a normal deposit with money you understand.
-                <br /><br />
-                We take care of all the token swapping, network bridging &amp; DeFi investing so that you can focus on the returns.
-              </h4>
-              <br />
-              <Button
-                className={classes.gutterBtn}
-                color="gray"
-                size="lg"
-                href="/register"
-                round
-              >
-                Documentation
-              </Button>
-              <Button
-                color="rose"
-                size="lg"
-                href="/register"
-                round
-              >
-                Register
-              </Button>
-            </GridItem>
-          </GridContainer>
+          <Card style={{ background: 'none', color: 'white', boxShadow: 'none', transition: 'all 1000ms ease-out', padding: '0' }} className={classes.xxx, classes[cardAnimaton]}>
+            <GridContainer spacing={0} className={classes.mainIntro}>
+              <GridItem sm={12}>
+
+                <h1 className={classes.title}>Simple <span className={classes.goldTxt}>Rand Investing</span> into Complex <span className={classes.greenTxt}>Decentralised Finance</span></h1>
+                <h4 className={classes.desc}>
+                  <span className={classes.biggerTxt}>Put your ZAR to work in the world of DeFi easily, no complicated wallets or risky transactions &amp; up to 10% APR with zero deposit fees.</span>
+                  <br /><br />
+                  It’s as simple as a normal deposit with money you understand.
+                  <br /><br />
+                  We take care of all the token swapping, network bridging &amp; DeFi investing so that you can focus on the returns.
+                </h4>
+                <br />
+                <Button
+                  className={classes.gutterBtn}
+                  color="gray"
+                  size="lg"
+                  href="/register"
+                  round
+                >
+                  Documentation
+                </Button>
+                <Button
+                  color="rose"
+                  size="lg"
+                  href="/register"
+                  round
+                >
+                  <PersonAddIcon className={classes.icons} />
+                  Register
+                </Button>
+              </GridItem>
+            </GridContainer>
+          </Card>
           <Lottie className={classes.scrollAnim} animationData={scrollAnim} />
         </div>
       </Parallax>

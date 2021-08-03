@@ -167,7 +167,6 @@ const headerStyle = {
     top: '18px',
     left: '0px',
     zIndex: '9999',
-    display: 'none',
   },
   avatar: {
     width: '30px',

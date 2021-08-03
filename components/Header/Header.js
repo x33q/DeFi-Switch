@@ -71,8 +71,6 @@ export default function Header(props) {
   );
   return (
     <AppBar className={appBarClasses}>
-
-      <img className={classes.ZALogo} alt="ZA" src="http://purecatamphetamine.github.io/country-flag-icons/3x2/ZA.svg"/>
       <Toolbar className={classes.container}>
         {leftLinks !== undefined ? brandComponent : null}
         <Avatar className={classes.avatar}>DS</Avatar>

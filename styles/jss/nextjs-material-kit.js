@@ -144,10 +144,13 @@ const dangerBoxShadow = {
   )}`,
 };
 const roseBoxShadow = {
-  boxShadow: `0 4px 20px 0px ${hexToRGBAlpha(
-    "#21b997",
-    0.14
-  )}, 0 7px 10px -5px ${hexToRGBAlpha(roseColor, 0.4)}`,
+  boxShadow: `0 12px 20px -10px ${hexToRGBAlpha(
+    roseColor,
+    0.28
+  )}, 0 4px 20px 0px rgba(0, 0, 0, 0.12), 0 7px 8px -5px ${hexToRGBAlpha(
+    roseColor,
+    0.2
+  )}`,
 };
 
 const warningCardHeader = {

@@ -11,7 +11,7 @@ export default function AnimatedBG() {
   return (
     <div>
       <AnimatedBg
-        colors={["#141928", "#14281d", "#111111"]}
+        colors={["#141928", "#1c1428", "#28141f"]}
         duration={5}
         delay={0}
         timingFunction="ease-out"

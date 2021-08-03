@@ -15,6 +15,11 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import InfoArea from "components/InfoArea/InfoArea.js";
 
+import Lottie from "lottie-react";
+import noHassles from "../../public/lottiefiles/noHassles.json";
+import noLimits from "../../public/lottiefiles/noLimits.json";
+import unlock from "../../public/lottiefiles/unlock.json";
+
 import styles from "styles/jss/nextjs-material-kit/pages/landingPageSections/productStyle.js";
 
 const useStyles = makeStyles(styles);
@@ -51,29 +56,17 @@ export default function ProductSection() {
 
             </GridItem>
             <GridItem className={classes.whyItem2} xs={12} sm={12} md={6}>
-              <InfoArea
-                icon={VerifiedUser}
-                iconColor="white"
-                vertical
-              />
+              <Lottie className={classes.scrollAnims} animationData={noHassles} />
               <h3 className={classes.whiteTitle}>Zero Hassles</h3>
               <p className={classes.whiteDesc}>We take care of all the swapping, bridging, staking & harvesting so you can just do the investing.</p>
             </GridItem>
             <GridItem className={classes.whyItem3} xs={12} sm={12} md={6}>
-              <InfoArea
-                icon={SpeedIcon}
-                iconColor="white"
-                vertical
-              />
+              <Lottie className={classes.scrollAnims} animationData={noLimits} />
               <h3 className={classes.whiteTitle}>Zero Limits</h3>
               <p className={classes.whiteDesc}>No set term or investment premium, start with whatever is safe for you.</p>
             </GridItem>
             <GridItem className={classes.whyItem4} xs={12} sm={12} md={6}>
-              <InfoArea
-                icon={NoEncryptionIcon}
-                iconColor="white"
-                vertical
-              />
+              <Lottie className={classes.scrollAnims} animationData={unlock} />
               <h3 className={classes.whiteTitle}>Zero Lockups</h3>
               <p className={classes.whiteDesc}>No lock up periods or complicated penalties, access your funds whenever you want.</p>
             </GridItem>

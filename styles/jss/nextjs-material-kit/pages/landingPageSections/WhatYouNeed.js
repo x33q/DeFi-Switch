@@ -20,6 +20,17 @@ const productStyle = {
     marginBottom: '60px',
     textAlign: 'left',
   },
+  replaceTitle: {
+    color: '#000',
+    fontSize: '1.5em',
+    fontWeight: '700',
+    marginBottom: '16px',
+  },
+  replaceDesc: {
+    color: '#000',
+    fontSize: '18px',
+    fontWeight: '300',
+  },
   icons: {
     margin: '0 0 0 10px',
   },
@@ -28,9 +39,19 @@ const productStyle = {
   },
   borderBox: {
     border: '1px solid rgba(104,108,122,0.2)',
+    borderRadius: '20px',
   },
   sectionIntro: {
     paddingRight: '130px !important',
+  },
+  whyItem: {
+    padding: '50px 60px 40px 60px !important',
+  },
+  scrollAnims: {
+    width: '100%',
+    height: '110px',
+    margin: '0 auto',
+    marginBottom: '0px',
   },
 };
 

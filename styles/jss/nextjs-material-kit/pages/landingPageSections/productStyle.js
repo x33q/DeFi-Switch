@@ -53,21 +53,35 @@ const productStyle = {
   whyItem1: {
     backgroundColor: '#f1f1f1',
     padding: '60px !important',
+    border: '15px solid #FFF',
+    borderRadius: '25px',
   },
   whyItem2: {
     backgroundColor: '#C4AC6B',
     padding: '60px !important',
+    border: '15px solid #FFF',
+    borderRadius: '25px',
   },
   whyItem3: {
     backgroundColor: '#605c6c',
     padding: '60px !important',
+    border: '15px solid #FFF',
+    borderRadius: '25px',
   },
   whyItem4: {
     backgroundColor: roseColor,
     padding: '60px !important',
+    border: '15px solid #FFF',
+    borderRadius: '25px',
   },
   topHeader: {
     backgroundColor: '',
+  },
+  scrollAnims: {
+    width: '100%',
+    height: '110px',
+    margin: '0 auto',
+    marginBottom: '10px',
   },
 };
 
