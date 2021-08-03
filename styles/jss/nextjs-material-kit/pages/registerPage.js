@@ -55,7 +55,7 @@ const signupPageStyle = {
     marginTop: "0px",
     padding: "80px",
     minHeight: '100%',
-    borderRadius: '5px 0px 0px 5px',
+    borderRadius: '19px 0px 0px 19px',
     display: 'flex',
     alignItems: 'flex-end',
     alignContent: 'center',
@@ -96,7 +96,7 @@ const signupPageStyle = {
   cardFooter: {
     paddingTop: "0rem",
     border: "0",
-    borderRadius: "6px",
+    borderRadius: "20px",
     justifyContent: "center !important",
   },
   socialLine: {
@@ -124,6 +124,20 @@ const signupPageStyle = {
     bottom: '0 !important',
     height: 'auto',
     zIndex: '10',
+  },
+  iFrameClass: {
+    height: '145vh',
+  },
+  regInfo: {
+    background: primaryColor,
+    maxHeight: '300px',
+    padding: '0 60px',
+    marginTop: '50px',
+    borderRadius: '13px',
+    display: 'flex',
+    alignItems: 'center',
+    alignContent: 'center',
+    flexWrap: 'wrap',
   },
 };
 

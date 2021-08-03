@@ -1,4 +1,4 @@
-import { container, primaryColor } from "styles/jss/nextjs-material-kit.js";
+import { container, primaryColor, grayColor } from "styles/jss/nextjs-material-kit.js";
 
 const signupPageStyle = {
   container: {
@@ -55,7 +55,7 @@ const signupPageStyle = {
     marginTop: "0px",
     padding: "80px",
     minHeight: '100%',
-    borderRadius: '5px 0px 0px 5px',
+    borderRadius: '19px 0px 0px 19px',
     display: 'flex',
     alignItems: 'flex-end',
     alignContent: 'center',
@@ -139,6 +139,15 @@ const signupPageStyle = {
     fontSize: '0.9em',
     lineHeight: '1.3rem',
     marginBottom: '20px',
+  },
+  stepNo: {
+    fontWeight: '700',
+    background: '#202020',
+    padding: '0 6px',
+    fontSize: '90%',
+    borderRadius: '3px',
+    textTransform: 'uppercase',
+    letterSpacing: '1px',
   },
 };
 

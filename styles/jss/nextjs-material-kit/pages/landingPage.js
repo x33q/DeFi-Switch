@@ -49,10 +49,12 @@ const landingPageStyle = {
   },
   playerWrapper: {
     position: 'fixed',
-    minHeight: '100%',
+    height: '100vh',
+    width: '100vw',
     top: '0px',
     left: '0%',
     zIndex: '2',
+    paddingTop: '56.25%',
   },
   animWrapper: {
     backgroundColor: '#0b043f',
@@ -71,8 +73,9 @@ const landingPageStyle = {
     mixBlendMode: 'multiply',
     width: '100vw !important',
     height: '100vh !important',
-    position: 'relative',
+    position: 'absolute',
     top: '-10px !important',
+    left: '0',
   },
   gutterBtn: {
     marginRight: '20px',

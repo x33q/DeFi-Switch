@@ -56,6 +56,7 @@ export default function RegisterPage(props) {
         }}
       >
         <div className={classes.container}>
+
           <GridContainer spacing={0} justify="center">
 
             <GridItem sm={12} lg={12}>
@@ -65,7 +66,7 @@ export default function RegisterPage(props) {
                   <GridContainer spacing={0} justify="center">
                     <GridItem sm={12} md={5} lg={5}>
                       <CardHeader color="primary" className={classes.cardHeader}>
-                        <p>Step 2</p>
+                        <p className={classes.stepNo}>Step 2</p>
                         <h4 className={classes.formTitle}>Customer Financial Informaton</h4>
                         <p className={classes.formSubtitle}>Please complete the required financial compliance steps.</p>
                       </CardHeader>

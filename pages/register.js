@@ -3,6 +3,9 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import InputAdornment from "@material-ui/core/InputAdornment";
 import Icon from "@material-ui/core/Icon";
+
+import Iframe from 'react-iframe'
+
 // @material-ui/icons
 import Email from "@material-ui/icons/Email";
 import People from "@material-ui/icons/People";
@@ -58,144 +61,26 @@ export default function RegisterPage(props) {
         <div className={classes.container}>
           <GridContainer spacing={0} justify="center">
 
-            <GridItem sm={12} lg={12}>
+          <GridItem sm={12} lg={4} className={classes.regInfo}>
+              <h4 className={classes.formTitle}>Register</h4>
+              <p className={classes.formSubtitle}>Get Started and invest in DeFi in under 7 minutes.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+          </GridItem>
 
-              <Card className={classes[cardAnimaton]}>
-                <form className={classes.form}>
+          <GridItem sm={12} lg={8}>
 
-                  <GridContainer spacing={0} justify="center">
-                    <GridItem sm={12} md={5} lg={5}>
-                      <CardHeader color="primary" className={classes.cardHeader}>
-                        <h4 className={classes.formTitle}>Register</h4>
-                        <p className={classes.formSubtitle}>Get Started and invest in DeFi in under 7 minutes.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-                      </CardHeader>
-                    </GridItem>
-                    <GridItem sm={12} md={7} lg={7}>
-                      <CardBody className={classes.cardBody}>
-                        <GridContainer spacing={0} justify="center">
-                          <GridItem xs={12} sm={6} md={6}>
-                            <CustomInput
-                              labelText="First Name..."
-                              id="first"
-                              formControlProps={{
-                                fullWidth: true,
-                              }}
-                              inputProps={{
-                                type: "text",
-                                endAdornment: (
-                                  <InputAdornment position="end">
-                                    <AccountCircleIcon className={classes.inputIconsColor} />
-                                  </InputAdornment>
-                                ),
-                              }}
-                            />
-                            <CustomInput
-                              labelText="Surname..."
-                              id="surname"
-                              formControlProps={{
-                                fullWidth: true,
-                              }}
-                              inputProps={{
-                                type: "text",
-                                endAdornment: (
-                                  <InputAdornment position="end">
-                                    <AccountCircleIcon className={classes.inputIconsColor} />
-                                  </InputAdornment>
-                                ),
-                              }}
-                            />
-                            <CustomInput
-                              labelText="SA ID Number..."
-                              id="idnumber"
-                              formControlProps={{
-                                fullWidth: true,
-                              }}
-                              inputProps={{
-                                type: "number",
-                                endAdornment: (
-                                  <InputAdornment position="end">
-                                    <FingerprintIcon className={classes.inputIconsColor} />
-                                  </InputAdornment>
-                                ),
-                              }}
-                            />
-                          </GridItem>
-                          <GridItem xs={12} sm={6} md={6}>
-                            <CustomInput
-                              labelText="Email..."
-                              id="email"
-                              formControlProps={{
-                                fullWidth: true,
-                              }}
-                              inputProps={{
-                                type: "email",
-                                endAdornment: (
-                                  <InputAdornment position="end">
-                                    <Email className={classes.inputIconsColor} />
-                                  </InputAdornment>
-                                ),
-                              }}
-                            />
-                            <CustomInput
-                              labelText="Password"
-                              id="pass"
-                              formControlProps={{
-                                fullWidth: true,
-                              }}
-                              inputProps={{
-                                type: "password",
-                                endAdornment: (
-                                  <InputAdornment position="end">
-                                    <Icon className={classes.inputIconsColor}>
-                                      lock_outline
-                                    </Icon>
-                                  </InputAdornment>
-                                ),
-                                autoComplete: "off",
-                              }}
-                            />
-                            <CustomInput
-                              labelText="Confirm Password"
-                              id="pass"
-                              formControlProps={{
-                                fullWidth: true,
-                              }}
-                              inputProps={{
-                                type: "password",
-                                endAdornment: (
-                                  <InputAdornment position="end">
-                                    <Icon className={classes.inputIconsColor}>
-                                      lock_outline
-                                    </Icon>
-                                  </InputAdornment>
-                                ),
-                                autoComplete: "off",
-                              }}
-                            />
-                          </GridItem>
-                        </GridContainer>
+          <Iframe url="http://makebetter.co.za/truliooTest/"
+          width="100%"
+          height="100%"
+          id="myId"
+          className={classes.iFrameClass}
+          display="initial"
+          position="relative"
+          frameBorder="0"/>
+          </GridItem>
 
-                        <RegisterStep1 />
-
-                      </CardBody>
-
-                      <CardFooter className={classes.cardFooter}>
-                        <Button
-                        href="/register2"
-                        fullWidth color="rose"
-                        size="lg">
-                          Get started
-                        </Button>
-                      </CardFooter><br />
-                  </GridItem>
-                </GridContainer>
-                </form>
-              </Card>
-            </GridItem>
           </GridContainer>
         </div>
-        <div className={classes.stepperStyling}><Stepper1 /></div>
         <Footer whiteFont />
       </div>
     </div>
