@@ -137,7 +137,7 @@ export default function SectionNavbars() {
           style={{ backgroundImage: "url('/img/bg7.jpg')" }}
         >
           <Header
-            brand="DeFi Switch"
+            brand="Switxh"
             color="primary"
             leftLinks={
               <List className={classes.list}>
@@ -186,7 +186,7 @@ export default function SectionNavbars() {
             }
           />
           <Header
-            brand="DeFi Switch"
+            brand="Switxh"
             color="white"
             rightLinks={
               <List className={classes.list}>
@@ -224,7 +224,7 @@ export default function SectionNavbars() {
             }
           />
           <Header
-            brand="DeFi Switch"
+            brand="Switxh"
             color="primary"
             rightLinks={
               <List className={classes.list}>
@@ -262,7 +262,7 @@ export default function SectionNavbars() {
             }
           />
           <Header
-            brand="DeFi Switch"
+            brand="Switxh"
             color="dark"
             rightLinks={
               <List className={classes.list}>
@@ -327,7 +327,7 @@ export default function SectionNavbars() {
             }
           />
           <Header
-            brand="DeFi Switch"
+            brand="Switxh"
             rightLinks={
               <List className={classes.list}>
                 <ListItem className={classes.listItem}>

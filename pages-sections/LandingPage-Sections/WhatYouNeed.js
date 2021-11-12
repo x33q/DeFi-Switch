@@ -65,7 +65,7 @@ export default function ProductSection() {
             <GridItem className={classes.whyItem} xs={12} sm={12} md={6}>
               <Lottie className={classes.scrollAnims} animationData={pop} />
               <h3 className={classes.replaceTitle}>4. Proof of Deposit</h3>
-              <p className={classes.replaceDesc}>Proof of deposit or transfer into DeFi Switch investment account.</p>
+              <p className={classes.replaceDesc}>Proof of deposit or transfer into Switxh investment account.</p>
               <br /><br />
             </GridItem>
           </GridContainer>

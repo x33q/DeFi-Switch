@@ -73,7 +73,7 @@ export default function Header(props) {
     <AppBar className={appBarClasses}>
       <Toolbar className={classes.container}>
         {leftLinks !== undefined ? brandComponent : null}
-        <Avatar className={classes.avatar}>DS</Avatar>
+        <Avatar className={classes.avatar}>S</Avatar>
         <div className={classes.flex}>
           {leftLinks !== undefined ? (
             <Hidden smDown implementation="css">
@@ -83,9 +83,7 @@ export default function Header(props) {
             brandComponent
           )}
         </div>
-        <Hidden smDown implementation="css">
-          {rightLinks}
-        </Hidden>
+
         <Hidden mdUp>
           <IconButton
             color="inherit"

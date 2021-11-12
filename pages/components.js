@@ -34,7 +34,7 @@ export default function Components(props) {
   return (
     <div>
       <Header
-        brand="DeFi Switch"
+        brand="Switxh"
         rightLinks={<HeaderLinks />}
         fixed
         color="transparent"

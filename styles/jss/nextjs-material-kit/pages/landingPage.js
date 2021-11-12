@@ -99,7 +99,6 @@ const landingPageStyle = {
   },
   card: {
     background: 'rgba(0,0,0,0) !important',
-    color: 'red !important',
   },
   xxx: {
     position: "relative",

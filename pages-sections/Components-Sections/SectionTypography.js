@@ -32,43 +32,43 @@ export default function SectionTypography() {
           <GridContainer>
             <div className={classes.typo}>
               <div className={classes.note}>Header 1</div>
-              <h1>DeFi Switch</h1>
+              <h1>Switxh</h1>
             </div>
             <div className={classes.typo}>
               <div className={classes.note}>Header 2</div>
-              <h2>DeFi Switch</h2>
+              <h2>Switxh</h2>
             </div>
             <div className={classes.typo}>
               <div className={classes.note}>Header 3</div>
-              <h3>DeFi Switch</h3>
+              <h3>Switxh</h3>
             </div>
             <div className={classes.typo}>
               <div className={classes.note}>Header 4</div>
-              <h4>DeFi Switch</h4>
+              <h4>Switxh</h4>
             </div>
             <div className={classes.typo}>
               <div className={classes.note}>Header 5</div>
-              <h5>DeFi Switch</h5>
+              <h5>Switxh</h5>
             </div>
             <div className={classes.typo}>
               <div className={classes.note}>Header 6</div>
-              <h6>DeFi Switch</h6>
+              <h6>Switxh</h6>
             </div>
             <div className={classes.typo}>
               <div className={classes.note}>Header 1</div>
-              <h1 className={classes.title}>DeFi Switch</h1>
+              <h1 className={classes.title}>Switxh</h1>
             </div>
             <div className={classes.typo}>
               <div className={classes.note}>Header 2</div>
-              <h2 className={classes.title}>DeFi Switch</h2>
+              <h2 className={classes.title}>Switxh</h2>
             </div>
             <div className={classes.typo}>
               <div className={classes.note}>Header 3</div>
-              <h3 className={classes.title}>DeFi Switch</h3>
+              <h3 className={classes.title}>Switxh</h3>
             </div>
             <div className={classes.typo}>
               <div className={classes.note}>Header 4</div>
-              <h4 className={classes.title}>DeFi Switch</h4>
+              <h4 className={classes.title}>Switxh</h4>
             </div>
             <div className={classes.typo}>
               <div className={classes.note}>Paragraph</div>
@@ -80,7 +80,7 @@ export default function SectionTypography() {
               <div className={classes.note}>Quote</div>
               <Quote
                 text="Put your ZAR to work in the world of DeFi easily, no complicated wallets or risky transactions &amp; up to 10% APR with zero deposit fees. It’s as simple as a normal deposit with money you understand. We take care of all the token swapping, network bridging &amp; DeFi investing so that you can focus on the returns."
-                author="DeFi Switch"
+                author="Switxh"
               />
             </div>
             <div className={classes.typo}>
