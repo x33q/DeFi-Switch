@@ -43,7 +43,7 @@ export default function RegisterPage(props) {
       <Header
         absolute
         color="transparent"
-        brand="Switxh"
+        brand="DeFi Switch"
         rightLinks={<HeaderLinks />}
         {...rest}
       />

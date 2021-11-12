@@ -56,7 +56,7 @@ export default function LoginPage(props) {
           <GridContainer spacing={2} justify="center">
             <GridItem xs={12} sm={12} md={6} className={classes.contentbodyleft}>
               <Avatar className={classes.avatarLogo}>DS</Avatar>
-              <h1 className={classes.logo}>Switxh</h1>
+              <h1 className={classes.logo}>DeFi Switch</h1>
               <h1 className={classes.title}>Simple Rand Investing into Complex Decentralised Finance.</h1>
               <h4 className={classes.desc}>
                 Put your ZAR to work in the world of DeFi easily, no complicated wallets or risky transactions &amp; up to 10% with zero deposit fees.

@@ -201,7 +201,7 @@ export default function ClippedDrawer() {
           <Tooltip title="Back to Home" placement="right">
           <Typography variant="h5" noWrap className={classes.apptitle}>
           <Link href="/landing" component="a">
-            <a className={classes.appLink}>Switxh</a>
+            <a className={classes.appLink}>DeFi Switch</a>
           </Link>
           </Typography>
           </Tooltip>

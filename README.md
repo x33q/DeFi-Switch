@@ -1,2 +1,2 @@
 # DeFi-Switch
- Switxh Next.js Set up
+ DeFi Switch Next.js Set up

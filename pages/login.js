@@ -34,7 +34,7 @@ export default function LoginPage(props) {
       <Header
         absolute
         color="transparent"
-        brand="Switxh"
+        brand="DeFi Switch"
         rightLinks={<HeaderLinks />}
         {...rest}
       />

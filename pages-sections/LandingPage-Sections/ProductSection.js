@@ -32,7 +32,7 @@ export default function ProductSection() {
         <GridContainer spacing={4}>
           <GridContainer lg={4} md={12} spacing={4}>
             <GridItem xs={12}>
-              <h2 className={classes.title}>Why use Switxh?</h2>
+              <h2 className={classes.title}>Why use DeFi Switch?</h2>
               <h5 className={classes.description}>
               This is the paragraph where you can write more details about your
               product. Keep you user engaged by providing meaningful information.<br /><br />

@@ -24,8 +24,13 @@ import Card from "components/Card/Card.js";
 import styles from "styles/jss/nextjs-material-kit/pages/landingPage.js";
 
 // Sections for this page
+import ProductSection from "pages-sections/LandingPage-Sections/ProductSection.js";
+import WhatYouNeed from "pages-sections/LandingPage-Sections/WhatYouNeed.js";
 import AnimatedBG from "components/AnimatedBG/animatedBG.js";
 
+import Lottie from "lottie-react";
+import scrollAnim from "../public/lottiefiles/scrolldown.json";
+import noHassles from "../public/lottiefiles/noHassles.json";
 
 const dashboardRoutes = [];
 
@@ -43,7 +48,7 @@ export default function LandingPage(props) {
       <Header
         color="transparent"
         routes={dashboardRoutes}
-        brand="Switxh"
+        brand="DeFi Switch"
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
@@ -97,8 +102,16 @@ export default function LandingPage(props) {
               </GridItem>
             </GridContainer>
           </Card>
+          <Lottie className={classes.scrollAnim} animationData={scrollAnim} />
         </div>
       </Parallax>
+      <div className={classNames(classes.main, classes.mainRaised)}>
+        <div className={classes.container}>
+          <ProductSection />
+          <WhatYouNeed />
+        </div>
+      </div>
+      <Footer />
     </div>
   );
 }
